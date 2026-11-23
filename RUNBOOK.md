@@ -19,11 +19,11 @@ bash engine/setup.sh
 
 ## 1. Decide what to do today
 
-Read `queue.json`. Count items with `"status": "ready"`.
+**Every day, without exception: make ONE new video and schedule it.** (Owner's standing rule: one new video made and posted every day.)
 
-- If there are **2 or more** ready items: skip to step 4 (post).
-- If there are **0 or 1**: make one new **motion Short** (step 2M), then post (step 4).
-- Once a week (when no `long` item was scheduled in the last 7 days) you may make a long engine episode instead (step 2), but the motion Short is the priority.
+- Make one new **motion Short** (step 2M) and schedule it for the earliest day, starting today, that has nothing scheduled in `queue.json` (step 4).
+- Older `ready` items in the queue (engine Shorts) are a **backup only**: post one of them on a day when the new video failed a check and could not be fixed, so the channel never misses a day.
+- Once a week you may make a long engine episode (step 2) in addition, never instead of the daily Short.
 
 ## 2M. Make a motion Short (main format)
 
