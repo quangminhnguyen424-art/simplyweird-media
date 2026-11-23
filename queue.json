@@ -7,7 +7,9 @@
    "episode": "2026-11-23-buildings-cheat-physics",
    "chapter": 1,
    "title": "Why Taipei 101 Hides a 660-Ton Steel Ball",
-   "status": "ready"
+   "status": "scheduled",
+   "scheduled_for": "2026-11-23T17:07:00-08:00",
+   "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=6960146751736202348"
   },
   {
    "file": "videos/2026-11-23-buildings-cheat-physics-long.mp4",
@@ -15,7 +17,9 @@
    "episode": "2026-11-23-buildings-cheat-physics",
    "chapter": 0,
    "title": "5 Skyscrapers That Cheat Physics (And How They Get Away With It)",
-   "status": "ready"
+   "status": "scheduled",
+   "scheduled_for": "2026-11-23T17:07:00-08:00",
+   "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=4074641231138672313"
   },
   {
    "file": "videos/2026-11-23-buildings-cheat-physics-short2.mp4",
