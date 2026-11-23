@@ -1,0 +1,575 @@
+{
+ "id": "2026-11-23-buildings-cheat-physics",
+ "title": "5 Skyscrapers That Cheat Physics (And How They Get Away With It)",
+ "thumb_text": "Buildings that cheat physics",
+ "thumb_icons": [
+  "🏙️",
+  "🌪️"
+ ],
+ "tags": [
+  "skyscrapers",
+  "engineering",
+  "science",
+  "physics",
+  "architecture",
+  "taipei 101",
+  "burj khalifa"
+ ],
+ "short_cta": "Want four more buildings that cheat physics? Watch the full video on Simply Weird, and follow for more weird stuff!",
+ "intro": [
+  {
+   "say": "Skyscrapers are not supposed to stand still. Wind shoves them, earthquakes shake them, and the taller they get, the more they want to wobble.",
+   "key": "Wobbly giants",
+   "icons": [
+    "🏙️",
+    "🌬️"
+   ],
+   "mood": "curious"
+  },
+  {
+   "say": "So engineers got sneaky. Giant swinging balls. Secret repairs at midnight. Buildings shaped to confuse the wind.",
+   "key": "Engineers got sneaky",
+   "icons": [
+    "🤫",
+    "🔩"
+   ],
+   "mood": "laughing"
+  },
+  {
+   "say": "Here are five skyscrapers that cheat physics, and exactly how they get away with it.",
+   "key": "5 sneaky tricks",
+   "icons": [
+    "🏗️"
+   ],
+   "mood": "explaining",
+   "num": "5"
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Taipei 101 hides a giant steel ball",
+   "short_title": "Why Taipei 101 Hides a 660-Ton Steel Ball",
+   "beats": [
+    {
+     "say": "There is a giant golden ball hanging inside this skyscraper, and nobody lost it there by accident.",
+     "key": "Taipei 101",
+     "icons": [
+      "🏢",
+      "🟡"
+     ],
+     "mood": "shocked",
+     "punch": true
+    },
+    {
+     "say": "Taipei 101 stands in a city that gets typhoons and earthquakes, so the tower is always being pushed around.",
+     "key": "Typhoons + quakes",
+     "icons": [
+      "🌀",
+      "🌋"
+     ],
+     "mood": "thinking"
+    },
+    {
+     "say": "Tall buildings sway a little in strong wind. That is normal, but too much swaying makes people inside feel seasick.",
+     "key": "Sway = seasick",
+     "icons": [
+      "🤢",
+      "🌬️"
+     ],
+     "mood": "laughing"
+    },
+    {
+     "say": "So engineers hung a steel ball weighing about six hundred sixty metric tons between the eighty seventh and ninety second floors.",
+     "key": "Floors 87 to 92",
+     "icons": [
+      "⚖️"
+     ],
+     "mood": "explaining",
+     "num": "660 tons"
+    },
+    {
+     "say": "It is about eighteen feet wide, built from forty one thick steel plates stacked together like a giant hamburger.",
+     "key": "18 feet wide",
+     "icons": [
+      "🍔",
+      "📏"
+     ],
+     "mood": "laughing"
+    },
+    {
+     "say": "When the wind pushes the tower one way, the ball swings the other way and pulls the building back toward the middle.",
+     "key": "Swing the other way",
+     "icons": [
+      "↔️",
+      "🏢"
+     ],
+     "mood": "explaining"
+    },
+    {
+     "say": "Engineers call this a tuned mass damper. Its maker says it can cut the tower's sway by up to forty percent.",
+     "key": "Tuned mass damper",
+     "icons": [
+      "📉"
+     ],
+     "mood": "explaining",
+     "num": "40%"
+    },
+    {
+     "say": "During Typhoon Soudelor in twenty fifteen, the ball swung about one meter, the biggest move it has ever made.",
+     "key": "Typhoon Soudelor",
+     "icons": [
+      "🌪️",
+      "📏"
+     ],
+     "mood": "shocked",
+     "punch": true
+    },
+    {
+     "say": "And the best part? It is not hidden away. Visitors can walk right up to it and watch it work.",
+     "key": "You can visit it",
+     "icons": [
+      "👀",
+      "🎟️"
+     ],
+     "mood": "curious"
+    },
+    {
+     "say": "It even has its own cartoon mascots, called the Damper Babies. Yes, really.",
+     "key": "Damper Babies",
+     "icons": [
+      "👶",
+      "🟡"
+     ],
+     "mood": "laughing"
+    }
+   ]
+  },
+  {
+   "title": "Citicorp Center and the secret midnight repairs",
+   "short_title": "The Skyscraper That Was Secretly Fixed at Night",
+   "beats": [
+    {
+     "say": "In nineteen seventy eight, one of New York's newest skyscrapers had a problem that almost nobody was allowed to know about.",
+     "key": "New York, 1978",
+     "icons": [
+      "🗽",
+      "🤫"
+     ],
+     "mood": "thinking"
+    },
+    {
+     "say": "Citicorp Center was fifty nine stories tall, and it stood on four giant stilts so a church could keep its corner of the block.",
+     "key": "Built on stilts",
+     "icons": [
+      "⛪",
+      "🏢"
+     ],
+     "mood": "curious"
+    },
+    {
+     "say": "It was very light for its size, so the engineer, William LeMessurier, added a four hundred ton concrete block that floats on oil to calm the sway.",
+     "key": "400-ton damper",
+     "icons": [
+      "🧱",
+      "🛢️"
+     ],
+     "mood": "explaining",
+     "num": "400 tons"
+    },
+    {
+     "say": "Then a student named Diane Hartley started asking questions about winds hitting the building from the corners.",
+     "key": "A student asks",
+     "icons": [
+      "🎓",
+      "❓"
+     ],
+     "mood": "curious"
+    },
+    {
+     "say": "LeMessurier checked again and found something worse. Joints that were meant to be welded had been bolted together instead.",
+     "key": "Bolts, not welds",
+     "icons": [
+      "🔩",
+      "😬"
+     ],
+     "mood": "shocked",
+     "punch": true
+    },
+    {
+     "say": "His numbers said that if the power went out and the damper stopped, a strong enough storm could arrive about once every sixteen years.",
+     "key": "1 in 16 years",
+     "icons": [
+      "⛈️",
+      "🔌"
+     ],
+     "mood": "shocked"
+    },
+    {
+     "say": "So every night, after the office workers went home, welders slipped in and covered about two hundred joints with thick steel plates.",
+     "key": "Welding at night",
+     "icons": [
+      "🌙",
+      "🔥"
+     ],
+     "mood": "explaining"
+    },
+    {
+     "say": "Then Hurricane Ella started heading up the coast, and the city quietly prepared evacuation plans just in case.",
+     "key": "Hurricane Ella",
+     "icons": [
+      "🌀",
+      "🚨"
+     ],
+     "mood": "shocked"
+    },
+    {
+     "say": "Luckily, the storm turned out to sea. The repairs were finished, and the story stayed mostly secret for almost twenty years.",
+     "key": "Secret for 20 years",
+     "icons": [
+      "🌊",
+      "🤐"
+     ],
+     "mood": "laughing"
+    },
+    {
+     "say": "And that student's question? It may have helped save a skyscraper.",
+     "key": "Ask the question",
+     "icons": [
+      "💡"
+     ],
+     "mood": "explaining"
+    }
+   ]
+  },
+  {
+   "title": "Tokyo Skytree copies an ancient pagoda",
+   "short_title": "Tokyo Skytree's 1,300-Year-Old Earthquake Trick",
+   "beats": [
+    {
+     "say": "Tokyo Skytree is six hundred thirty four meters tall, in one of the most earthquake prone cities on Earth.",
+     "key": "Tokyo Skytree",
+     "icons": [
+      "🗼",
+      "🌏"
+     ],
+     "mood": "curious",
+     "num": "634 m"
+    },
+    {
+     "say": "Its secret weapon is not new at all. It comes from wooden pagodas that are well over a thousand years old.",
+     "key": "Ancient pagodas",
+     "icons": [
+      "🛕",
+      "⏳"
+     ],
+     "mood": "thinking"
+    },
+    {
+     "say": "Old Japanese pagodas have a central pillar called a shinbashira, running up the middle of the building.",
+     "key": "Shinbashira",
+     "icons": [
+      "🪵",
+      "⬆️"
+     ],
+     "mood": "explaining"
+    },
+    {
+     "say": "Skytree has its own version: a concrete column eight meters wide and three hundred seventy five meters tall, standing inside the steel tower.",
+     "key": "Column inside a tower",
+     "icons": [
+      "🏛️",
+      "🗼"
+     ],
+     "mood": "explaining",
+     "num": "375 m"
+    },
+    {
+     "say": "Here is the clever bit. The column and the outer tower are built separately, so they shake at different rhythms.",
+     "key": "Different rhythms",
+     "icons": [
+      "🎵",
+      "↔️"
+     ],
+     "mood": "curious"
+    },
+    {
+     "say": "When one leans left and the other leans right, they cancel each other out, a bit like two people steadying a canoe.",
+     "key": "They cancel out",
+     "icons": [
+      "🛶",
+      "🤝"
+     ],
+     "mood": "laughing"
+    },
+    {
+     "say": "Oil dampers between them soak up the energy, like the shock absorbers in a car.",
+     "key": "Shock absorbers",
+     "icons": [
+      "🚗",
+      "🛢️"
+     ],
+     "mood": "explaining"
+    },
+    {
+     "say": "According to its designers, the system cuts earthquake shaking by up to half, and wind shaking by about thirty percent.",
+     "key": "Up to 50% calmer",
+     "icons": [
+      "📉"
+     ],
+     "mood": "explaining",
+     "num": "50%"
+    },
+    {
+     "say": "In twenty eleven, while still under construction, Skytree rode out the Great East Japan Earthquake without damage.",
+     "key": "Survived 2011",
+     "icons": [
+      "🌋",
+      "💪"
+     ],
+     "mood": "shocked",
+     "punch": true
+    },
+    {
+     "say": "A thirteen hundred year old idea, holding up one of the tallest towers in the world.",
+     "key": "Old idea wins",
+     "icons": [
+      "🏆"
+     ],
+     "mood": "laughing"
+    }
+   ]
+  },
+  {
+   "title": "Burj Khalifa confuses the wind",
+   "short_title": "How the Burj Khalifa Confuses the Wind",
+   "beats": [
+    {
+     "say": "The Burj Khalifa is eight hundred twenty eight meters tall, and up there the wind is a serious bully.",
+     "key": "Burj Khalifa",
+     "icons": [
+      "🏙️",
+      "💨"
+     ],
+     "mood": "curious",
+     "num": "828 m"
+    },
+    {
+     "say": "The danger is not only the push. When wind flows around a tall tower, it peels off in swirls on alternating sides.",
+     "key": "Swirling wind",
+     "icons": [
+      "🌀",
+      "🌀"
+     ],
+     "mood": "explaining"
+    },
+    {
+     "say": "Those swirls are called vortices, and they tug the building left, then right, then left again.",
+     "key": "Left, right, left",
+     "icons": [
+      "↔️",
+      "😵"
+     ],
+     "mood": "shocked"
+    },
+    {
+     "say": "If that rhythm matches the building's natural sway, the motion can build up, like pushing a kid on a swing at just the right moment.",
+     "key": "Like a swing",
+     "icons": [
+      "🎠",
+      "📈"
+     ],
+     "mood": "thinking"
+    },
+    {
+     "say": "So the designers did something sneaky. They made sure the tower never has the same shape for very long.",
+     "key": "Never the same shape",
+     "icons": [
+      "🔀"
+     ],
+     "mood": "laughing"
+    },
+    {
+     "say": "The building has three wings, and as it rises it steps inward in a spiral of setbacks, more than two dozen of them.",
+     "key": "Spiral setbacks",
+     "icons": [
+      "🌀",
+      "🪜"
+     ],
+     "mood": "explaining"
+    },
+    {
+     "say": "Every time the width changes, the swirls change too, so they never line up into one strong rhythm.",
+     "key": "No steady rhythm",
+     "icons": [
+      "🎶",
+      "❌"
+     ],
+     "mood": "explaining"
+    },
+    {
+     "say": "Its chief structural engineer, Bill Baker, calls this confusing the wind.",
+     "key": "Confuse the wind",
+     "icons": [
+      "😵‍💫",
+      "💨"
+     ],
+     "mood": "laughing",
+     "punch": true
+    },
+    {
+     "say": "They even tested models in wind tunnels and rotated the whole building to face the strongest desert winds in its best direction.",
+     "key": "Wind tunnel tests",
+     "icons": [
+      "🧪",
+      "🏜️"
+     ],
+     "mood": "curious"
+    },
+    {
+     "say": "The tallest building on Earth does not fight the wind. It just keeps it guessing.",
+     "key": "Keep it guessing",
+     "icons": [
+      "🤔"
+     ],
+     "mood": "laughing"
+    }
+   ]
+  },
+  {
+   "title": "Shanghai Tower twists to save millions",
+   "short_title": "Why the Shanghai Tower Is Twisted",
+   "beats": [
+    {
+     "say": "The Shanghai Tower looks like someone grabbed the top and gave it a twist. That is exactly the point.",
+     "key": "A twisted tower",
+     "icons": [
+      "🌪️",
+      "🏢"
+     ],
+     "mood": "curious"
+    },
+    {
+     "say": "At six hundred thirty two meters, it is China's tallest building, in a city that gets typhoon force winds.",
+     "key": "China's tallest",
+     "icons": [
+      "🇨🇳",
+      "🌀"
+     ],
+     "mood": "explaining",
+     "num": "632 m"
+    },
+    {
+     "say": "The glass skin rotates about one hundred twenty degrees from bottom to top, and it gets narrower as it rises.",
+     "key": "120 degree twist",
+     "icons": [
+      "🔄",
+      "📐"
+     ],
+     "mood": "explaining",
+     "num": "120°"
+    },
+    {
+     "say": "Engineers tested different versions in a wind tunnel to see how much twist worked best.",
+     "key": "Wind tunnel",
+     "icons": [
+      "🧪",
+      "💨"
+     ],
+     "mood": "thinking"
+    },
+    {
+     "say": "The twist, the taper, and the rounded corners break up the wind before it can grab the building.",
+     "key": "Break up the wind",
+     "icons": [
+      "💨",
+      "✂️"
+     ],
+     "mood": "explaining"
+    },
+    {
+     "say": "The result was about twenty four percent less wind load than a plain box tower of the same height.",
+     "key": "24% less wind",
+     "icons": [
+      "📉"
+     ],
+     "mood": "shocked",
+     "num": "24%",
+     "punch": true
+    },
+    {
+     "say": "Less wind load means less steel and concrete, which reportedly saved about fifty eight million dollars.",
+     "key": "$58 million saved",
+     "icons": [
+      "💰",
+      "🧱"
+     ],
+     "mood": "laughing",
+     "num": "$58M"
+    },
+    {
+     "say": "And just in case, there is also a giant damper near the top, a cousin of the ball inside Taipei 101.",
+     "key": "Plus a damper",
+     "icons": [
+      "🟡"
+     ],
+     "mood": "explaining"
+    },
+    {
+     "say": "So the twist is not only for looks. It is a shape that pays for itself.",
+     "key": "Pays for itself",
+     "icons": [
+      "😎"
+     ],
+     "mood": "laughing"
+    },
+    {
+     "say": "Sometimes the smartest way to beat the wind is to stop standing in its way.",
+     "key": "Get out of the way",
+     "icons": [
+      "🙌"
+     ],
+     "mood": "explaining"
+    }
+   ]
+  }
+ ],
+ "outro": [
+  {
+   "say": "A swinging ball, a secret repair, an ancient pillar, a confusing shape, and a twist that saves millions.",
+   "key": "5 tricks",
+   "icons": [
+    "🟡",
+    "🔩",
+    "🛕"
+   ],
+   "mood": "explaining"
+  },
+  {
+   "say": "Skyscrapers do not win by being stiff. They win by being clever.",
+   "key": "Clever beats stiff",
+   "icons": [
+    "🧠"
+   ],
+   "mood": "laughing"
+  },
+  {
+   "say": "Which trick surprised you most? Tell us in the comments, and follow Simply Weird for more weird things, explained the fun way.",
+   "key": "Comment + follow",
+   "icons": [
+    "💬",
+    "👍"
+   ],
+   "mood": "laughing"
+  }
+ ],
+ "sources": [
+  "https://www.pbs.org/wgbh/buildingbig/wonder/structure/citicorp.html",
+  "https://99percentinvisible.org/episode/structural-integrity/",
+  "https://www.japantimes.co.jp/news/2019/10/12/national/tokyo-skytree-stand-typhoon-winds",
+  "https://gov-online.go.jp/eng/publicity/book/hlj/html/201112/201112_01.html",
+  "https://www.theb1m.com/video/how-tall-buildings-tame-the-wind",
+  "https://www.som.com/projects/burj-khalifa/",
+  "https://www.designingbuildings.co.uk/wiki/Shanghai_Tower",
+  "https://www.lonelyplanet.com/pois/1419097"
+ ]
+}

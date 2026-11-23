@@ -1,0 +1,4 @@
+{
+ "note": "Posting queue for Simply Weird. The daily task posts the first item whose status is 'ready', then marks it 'scheduled'. Episodes produce one 'long' item and one 'short' item per chapter.",
+ "items": []
+}
