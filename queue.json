@@ -45,7 +45,9 @@
     "https://en.wikipedia.org/wiki/Eustachian_tube",
     "https://med.uth.edu/orl/2020/01/09/ears-and-altitude/"
    ],
-   "status": "ready"
+   "status": "scheduled",
+   "scheduled_for": "2026-11-25T17:07:00-08:00",
+   "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=6862128942684979909"
   },
   {
    "file": "videos/2026-11-23-buildings-cheat-physics-short2.mp4",
