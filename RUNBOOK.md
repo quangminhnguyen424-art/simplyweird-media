@@ -2,7 +2,9 @@
 
 This is what the daily scheduled task does. Owner: Quang Minh Nguyen. Report to him in Vietnamese.
 
-Channel: **Simply Weird** (English). Tone: fun, curious, kid-friendly explanations of weird things in science, engineering, nature, history, everyday life. Mascot: **Huh** (pink, question-mark antenna). Never copy another creator's script, voice or visuals. Every fact must be checked against a source found today.
+Channel: **Simply Weird** (English). Tone: casual and funny, like explaining to a friend; short punchy sentences, a little self-aware humour, still family-friendly. Topics: weird things in science, engineering, nature, history, everyday life.
+
+Visual style (`"theme": "stick"`, the default): black canvas, the channel mascot **Huh** (pink, question-mark antenna, white cut-out border) acting out every beat through its `mood` pose, red handwritten lowercase labels, colour emoji cut-outs with white borders, plain white subtitles. Huh is the one recurring character in every video. Titles in lowercase with a hook, e.g. "why taipei 101 hides a 660-ton steel ball (explained simply)". Thumbnails: short red lowercase hook text (2 to 5 words) on black with the shocked Huh mascot. Do not copy another channel's titles, characters, scripts or images; no memes or copyrighted characters. Never copy another creator's script, voice or visuals. Every fact must be checked against a source found today.
 
 Metricool brand: `blogId 7906465`, timezone `America/Los_Angeles`. Networks: YouTube (@simplyweirdexplained), TikTok (@justinonthesky, display name Simply Weird, personal account), Facebook page Simply Weird.
 

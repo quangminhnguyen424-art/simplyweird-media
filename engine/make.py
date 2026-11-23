@@ -302,11 +302,208 @@ class Scene:
                 y += f2.size * 1.15
 
 
+# ---------------------------------------------------------------- "stick" theme: black canvas, white stick figure, red handwritten labels
+FHAND = os.path.join(ASSET, "fonts", "PatrickHand-400.ttf")
+FSUB = os.path.join(ASSET, "fonts", "ComicNeue-700.ttf")
+RED = (255, 64, 64); WHITE = (255, 255, 255); BLACK = (8, 8, 10)
+
+
+def sticker(ch, size, _c={}):
+    """Colour emoji cut out with a thick white border, like a meme cut-out."""
+    k = (ch, size)
+    if k in _c: return _c[k]
+    im = emoji_img(ch, size)
+    if im is None: _c[k] = None; return None
+    pad = size // 12; big = Image.new("RGBA", (size + 2 * pad, size + 2 * pad), (0, 0, 0, 0)); big.paste(im, (pad, pad), im)
+    a = big.split()[3].point(lambda v: 255 if v > 30 else 0).filter(ImageFilter.MaxFilter(2 * (pad // 2) + 1))
+    border = Image.new("RGBA", big.size, WHITE + (255,)); border.putalpha(a)
+    border.alpha_composite(big); _c[k] = border; return border
+
+
+def draw_stick(d, cx, gy, h, mood, t, lt, S=1.0):
+    """Draw a thick white stick figure standing on y=gy, total height h."""
+    lw = max(6, int(h * 0.055)); hr = h * 0.17
+    hy = gy - h + hr; neck = hy + hr; hip = gy - h * 0.38
+    sway = math.sin(t * 2.0) * h * 0.01; cx = cx + sway
+    bob = abs(math.sin(t * 4.0)) * h * 0.012 if mood == "laughing" else 0
+    hy -= bob; neck -= bob; hip -= bob
+    shoulder = neck + h * 0.06
+    W_ = WHITE
+    def limb(x0, y0, ang, L, ang2=None, L2=None):
+        x1 = x0 + L * math.cos(ang); y1 = y0 + L * math.sin(ang)
+        d.line([x0, y0, x1, y1], fill=W_, width=lw); d.ellipse([x1 - lw / 2, y1 - lw / 2, x1 + lw / 2, y1 + lw / 2], fill=W_)
+        if ang2 is not None:
+            x2 = x1 + L2 * math.cos(ang2); y2 = y1 + L2 * math.sin(ang2)
+            d.line([x1, y1, x2, y2], fill=W_, width=lw); d.ellipse([x2 - lw / 2, y2 - lw / 2, x2 + lw / 2, y2 + lw / 2], fill=W_)
+            return x2, y2
+        return x1, y1
+    # body
+    d.line([cx, neck, cx, hip], fill=W_, width=int(lw * 1.25))
+    # legs
+    step = math.sin(t * 3) * 0.04
+    limb(cx, hip, math.radians(105) + step, h * 0.38); limb(cx, hip, math.radians(75) - step, h * 0.38)
+    ua, la = h * 0.2, h * 0.19; w = math.sin(t * 5 + lt) * 0.12
+    if mood == "shocked":
+        limb(cx, shoulder, math.radians(-140) + w, ua, math.radians(-110) + w, la); limb(cx, shoulder, math.radians(-40) - w, ua, math.radians(-70) - w, la)
+    elif mood == "thinking":
+        limb(cx, shoulder, math.radians(120), ua, math.radians(-60), la * 0.9); limb(cx, shoulder, math.radians(70), ua, math.radians(95), la)
+    elif mood == "explaining":
+        limb(cx, shoulder, math.radians(110), ua, math.radians(95), la); limb(cx, shoulder, math.radians(-15) + w * 0.6, ua, math.radians(-25) + w, la)
+    elif mood == "laughing":
+        limb(cx, shoulder, math.radians(160) + w, ua, math.radians(200) + w, la); limb(cx, shoulder, math.radians(20) - w, ua, math.radians(-20) - w, la)
+    else:  # curious: scratching head
+        limb(cx, shoulder, math.radians(-120), ua, math.radians(-40) + w, la * 0.85); limb(cx, shoulder, math.radians(75), ua, math.radians(95), la)
+    # head (white disc with a simple black face)
+    tilt = {"curious": 0.12, "thinking": -0.1}.get(mood, 0.0) * h
+    hx = cx + tilt * 0.3
+    d.ellipse([hx - hr, hy - hr, hx + hr, hy + hr], fill=W_)
+    ex = hr * 0.32; ey = hy - hr * 0.08; er = max(3, hr * (0.14 if mood == "shocked" else 0.1))
+    blink = (t % 3.7) < 0.12
+    look = hr * 0.12 if mood in ("explaining", "curious") else 0
+    for sx in (-1, 1):
+        if blink: d.line([hx + sx * ex - er + look, ey, hx + sx * ex + er + look, ey], fill=BLACK, width=max(2, int(er * 0.6)))
+        else: d.ellipse([hx + sx * ex - er + look, ey - er, hx + sx * ex + er + look, ey + er], fill=BLACK)
+    my = hy + hr * 0.38; mw = hr * 0.38; mlw = max(2, int(hr * 0.09))
+    if mood == "shocked": d.ellipse([hx - mw * 0.45, my - mw * 0.3, hx + mw * 0.45, my + mw * 0.55], fill=BLACK)
+    elif mood == "laughing": d.chord([hx - mw, my - mw * 0.6, hx + mw, my + mw * 0.8], 0, 180, fill=BLACK)
+    elif mood == "thinking": d.line([hx - mw * 0.6, my + 2, hx + mw * 0.6, my - 4], fill=BLACK, width=mlw)
+    else: d.arc([hx - mw, my - mw * 0.7, hx + mw, my + mw * 0.5], 20, 160, fill=BLACK, width=mlw)
+    if mood == "thinking":  # thought bubbles
+        for i, r in enumerate((hr * 0.12, hr * 0.18, hr * 0.26)):
+            bx = hx + hr * (1.1 + 0.45 * i); by = hy - hr * (0.9 + 0.5 * i)
+            d.ellipse([bx - r, by - r, bx + r, by + r], outline=W_, width=max(2, lw // 3))
+    if mood == "shocked":  # little shock lines
+        for a in (-60, -90, -120):
+            ra = math.radians(a); d.line([hx + 1.3 * hr * math.cos(ra), hy + 1.3 * hr * math.sin(ra), hx + 1.7 * hr * math.cos(ra), hy + 1.7 * hr * math.sin(ra)], fill=RED, width=max(3, lw // 2))
+
+
+def mascot_cut(mood, h, _c={}):
+    """Mascot with a white cut-out border so the dark outline reads on black."""
+    k = (mood, h)
+    if k in _c: return _c[k]
+    m = mascot_img(mood, h); pad = max(6, h // 40)
+    big = Image.new("RGBA", (m.width + 2 * pad, m.height + 2 * pad), (0, 0, 0, 0)); big.paste(m, (pad, pad), m)
+    a = big.split()[3].point(lambda v: 255 if v > 40 else 0).filter(ImageFilter.MaxFilter(2 * pad + 1))
+    out = Image.new("RGBA", big.size, WHITE + (255,)); out.putalpha(a); out.alpha_composite(big); _c[k] = out; return out
+
+
+class StickScene(Scene):
+    def __init__(self, b, t0, t1, W, H, vertical, idx, nbeats, card_no=None):
+        self.b, self.t0, self.t1, self.W, self.H, self.v, self.idx, self.n = b, t0, t1, W, H, vertical, idx, nbeats
+        self.words = b["say"].split(); self.cap_cache = {}
+        sz = 360 if vertical else 300
+        self.icons = [sticker(e, sz) for e in b.get("icons", [])[:3]]; self.icons = [i for i in self.icons if i is not None]
+        self.bg = Image.new("RGB", (W, H), BLACK); self.hl = (255, 214, 64)
+
+    def caption(self, cur):
+        if cur in self.cap_cache: return self.cap_cache[cur]
+        W = self.W; fs = 62 if self.v else 50; f = font(FSUB, fs)
+        tmp = ImageDraw.Draw(Image.new("RGB", (10, 10)))
+        lines = wrap(tmp, [w + " " for w in self.words], f, W * (0.88 if self.v else 0.72))
+        lines = [[(i, w.strip()) for i, w in ln] for ln in lines]
+        lh = int(fs * 1.25); im = Image.new("RGBA", (W, lh * len(lines) + 20), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+        sp = text_w(d, " ", f); y = lh // 2 + 8
+        for ln in lines:
+            x = W / 2 - text_w(d, " ".join(w for _, w in ln), f) / 2
+            for i, w in ln:
+                d.text((x, y), w, font=f, fill=self.hl if i == cur else WHITE, anchor="lm", stroke_width=4, stroke_fill=BLACK)
+                x += text_w(d, w, f) + sp
+            y += lh
+        self.cap_cache[cur] = im; return im
+
+    def frame(self, t):
+        W, H, v, b = self.W, self.H, self.v, self.b
+        lt = t - self.t0; dur = max(0.5, self.t1 - self.t0 + GAP); p = min(1, max(0, lt / dur))
+        S = 2  # supersample the line art
+        im = Image.new("RGB", (W * S, H * S), BLACK); d = ImageDraw.Draw(im)
+        mood = b.get("mood", "curious")
+        if b.get("card"):
+            f1 = font(FHAND, int((200 if v else 180) * S * max(0.05, ease_out_back(min(1, lt / 0.4)))))
+            d.text((W * S / 2, H * S * (0.30 if v else 0.30)), b["key"], font=f1, fill=RED, anchor="mm")
+            f2 = font(FHAND, (100 if v else 90) * S); tmp = ImageDraw.Draw(Image.new("RGB", (10, 10)))
+            lines = wrap(tmp, b["card"].lower().split(), f2, W * S * 0.86); y = H * S * 0.45
+            if lt > 0.25:
+                for ln in lines:
+                    d.text((W * S / 2, y), " ".join(w for _, w in ln), font=f2, fill=WHITE, anchor="mm"); y += f2.size * 1.1
+        else:
+            # stick figure: left-centre, standing on an imaginary floor
+            pass
+            # handwritten red label at the top
+            if b.get("key"):
+                a = min(1, lt / 0.25); f = font(FHAND, int((96 if v else 84) * S))
+                txt = b["key"].lower()
+                shown = txt[: max(1, int(len(txt) * a))]  # typewriter reveal
+                d.text((W * S / 2, H * S * (0.12 if v else 0.11)), shown, font=f, fill=RED, anchor="mm")
+        im = im.resize((W, H), Image.LANCZOS)
+        # the channel mascot Huh: big, centre-left, hops in and bobs
+        if b.get("card"): mh, mx, gy = int(H * (0.24 if v else 0.42)), W * (0.5 if v else 0.14), H * (0.76 if v else 0.86)
+        else: mh, mx, gy = int(H * (0.34 if v else 0.60)), W * (0.27 if v else 0.19), H * (0.725 if v else 0.80)
+        m = mascot_cut(mood, mh)
+        hop = max(0, math.sin(min(1, lt / 0.32) * math.pi)) * mh * 0.07
+        sq = 1 + 0.035 * math.sin(t * 7.0); rot = 4 * math.sin(t * 1.7) if mood in ("laughing", "curious") else 2 * math.sin(t * 1.3)
+        m2 = m.resize((int(m.width * (2 - sq)), int(m.height * sq)), Image.BILINEAR).rotate(rot, resample=Image.BILINEAR, expand=True)
+        im.paste(m2, (int(mx - m2.width / 2), int(gy - m2.height - hop)), m2)
+        if not b.get("card"):
+            # sticker cut-outs pop in to the right of / above the figure
+            n = len(self.icons)
+            if v: cx0, cy0, spread = W * 0.70, H * 0.42, H * 0.17
+            else: cx0, cy0, spread = W * 0.62, H * 0.42, W * 0.18
+            for i, ic in enumerate(self.icons):
+                a = (lt - 0.15 * i) / 0.35
+                if a <= 0: continue
+                s = ease_out_back(min(1, a)); base = 1.0 if n == 1 else (0.8 if n == 2 else 0.66)
+                sz = int(ic.width * base * max(0.05, s))
+                if sz < 4: continue
+                r = ic.resize((sz, sz), Image.BILINEAR).rotate(-8 + 16 * ((i * 37) % 3) / 2 + 3 * math.sin(lt * 2 + i), resample=Image.BILINEAR)
+                off = (i - (n - 1) / 2) * spread
+                if v: x, y = int(cx0 - sz / 2 + (i % 2) * 40 - 20), int(cy0 + off - sz / 2)
+                else: x, y = int(cx0 + off - sz / 2), int(cy0 - sz / 2 + (i % 2) * 40 - 20)
+                im.paste(r, (x, y), r)
+            if b.get("num"):
+                d2 = ImageDraw.Draw(im); f = font(FHAND, 150 if v else 130); txt = str(b["num"])
+                import re
+                m = re.match(r"^([^\d]*)([\d,.]+)(.*)$", txt); a = min(1, lt / 0.6)
+                if m and a < 1:
+                    num = float(m.group(2).replace(",", "")); dec = len(m.group(2).split(".")[1]) if "." in m.group(2) else 0
+                    txt = m.group(1) + (f"{num * ease(a):,.{dec}f}" if "," in m.group(2) else f"{num * ease(a):.{dec}f}") + m.group(3)
+                d2.text((W * (0.72 if v else 0.64), H * (0.60 if v else 0.70)), txt, font=f, fill=self.hl, anchor="mm")
+        # slow zoom-in (Ken Burns) + punch-in on emphasis beats
+        z = 1.0 + 0.04 * ease(p) + (0.07 * max(0, 1 - lt / 0.25) if b.get("punch") else 0)
+        if z > 1.001:
+            cw, chh = int(W / z), int(H / z); ox, oy = (W - cw) // 2, int((H - chh) * 0.45)
+            im = im.crop((ox, oy, ox + cw, oy + chh)).resize((W, H), Image.BILINEAR)
+        cur = -1
+        if self.t0 <= t < self.t1:
+            lens = [len(w) + 1 for w in self.words]; acc = 0; tot = sum(lens); fr = (t - self.t0) / (self.t1 - self.t0)
+            for i, L in enumerate(lens):
+                acc += L
+                if fr < acc / tot: cur = i; break
+        elif t >= self.t1: cur = len(self.words) - 1
+        cap = self.caption(cur); cy = int(H * (0.84 if v else 0.88))
+        im.paste(cap, (0, cy - cap.height // 2), cap)
+        if v:
+            fr = (self.idx + p) / self.n; d = ImageDraw.Draw(im); d.rectangle([0, H - 10, int(W * fr), H], fill=RED)
+        return im
+
+
+def stick_thumb(ep, W=1280, H=720):
+    im = Image.new("RGB", (W, H), BLACK)
+    m = mascot_cut("shocked", 520); im.paste(m, (80, H - m.height + 14), m)
+    icons = [sticker(e, 260) for e in ep.get("thumb_icons", [])[:2]]
+    for i, ic in enumerate(x for x in icons if x):
+        ic = ic.rotate(-10 + 20 * i, expand=True); im.paste(ic, (560 + i * 330, 250 + (i % 2) * 120), ic)
+    d = ImageDraw.Draw(im); txt = ep.get("thumb_text", ep["title"]).lower(); fs = 130
+    while d.textlength(txt, font=font(FHAND, fs)) > W - 80: fs -= 6
+    d.text((W / 2, 95), txt, font=font(FHAND, fs), fill=RED, anchor="mm")
+    return im
+
+
 # ---------------------------------------------------------------- render
 def render(ep, work, beats, seg, preview=False):
     sb = segment(beats, seg); tl, total = timeline(work, sb)
     vertical = seg != "long"; W, H = (1080, 1920) if vertical else (1920, 1080)
-    scenes = [Scene(b, t0, t1, W, H, vertical, i, len(tl)) for i, (b, t0, t1, a, sr) in enumerate(tl)]
+    SC = StickScene if ep.get("theme", "stick") == "stick" else Scene
+    scenes = [SC(b, t0, t1, W, H, vertical, i, len(tl)) for i, (b, t0, t1, a, sr) in enumerate(tl)]
     bounds = [0.0] + [tl[i][1] - 0.04 for i in range(1, len(tl))] + [total]
     os.makedirs(ROOT + "/out", exist_ok=True)
     if preview:
@@ -336,6 +533,8 @@ def render(ep, work, beats, seg, preview=False):
 
 
 def thumb(ep, work, beats):
+    if ep.get("theme", "stick") == "stick":
+        p = f"{ROOT}/out/{ep['id']}-thumb.jpg"; stick_thumb(ep).save(p, quality=92); print(p); return p
     W, H = 1280, 720; im = bg_image(W, H, YEL, 7); d = ImageDraw.Draw(im)
     m = mascot_img("shocked", 560); im.paste(m, (30, 150), m)
     icons = [emoji_img(e, 200) for e in ep.get("thumb_icons", ep["chapters"][0]["beats"][0].get("icons", []))[:2]]
