@@ -11,4 +11,8 @@ if [ ! -d "$OM/color/svg" ]; then
   mkdir -p /tmp/om && (cd /tmp/om && npm pack openmoji@17.0.0 -q >/dev/null && tar xzf openmoji-17.0.0.tgz)
 fi
 command -v ffmpeg >/dev/null || (apt-get update -qq && apt-get install -y -qq ffmpeg)
+# motion-graphics (Remotion) toolchain
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+[ -d "$ROOT/motion/node_modules/remotion" ] || (cd "$ROOT/motion" && npm ci --no-audit --no-fund --loglevel=error)
+command -v google-chrome >/dev/null || echo "WARN: no google-chrome; set CHROME=/path/to/chrome for motion/build.py"
 echo "setup ok"

@@ -63,7 +63,10 @@ def load(path):
     for b in ep.get("outro", []): beats.append(dict(b, _seg="outro", _ch=-1))
     cta = ep.get("short_cta", "The full story is on our channel. Follow Simply Weird for more!")
     beats.append({"say": cta, "key": "FOLLOW FOR MORE", "icons": ["👉", "🤓"], "mood": "laughing", "_seg": "cta", "_ch": -2})
-    for i, b in enumerate(beats): b["_id"] = i
+    nch = len(ep["chapters"]); hdr = ep.get("series_label", ep["title"]).lower()
+    for i, b in enumerate(beats):
+        b["_id"] = i; b["_hdr"] = hdr
+        if b["_ch"] >= 0: b["_cnt"] = f"{b['_ch'] + 1}/{nch}"
     return ep, work, beats
 
 
@@ -121,6 +124,20 @@ def mix_audio(work, tl, total, name, seed):
     sr = tl[0][4]; n = int(total * sr); v = np.zeros(n, dtype=np.float32)
     for (b, t0, t1, a, _) in tl:
         s = int(t0 * sr); v[s:s + len(a)] += a[: max(0, n - s)]
+    fx = np.zeros(n, dtype=np.float32); rng = np.random.default_rng(seed)
+    def add(at, clip):
+        i0 = int(at * sr)
+        if 0 <= i0 < n: fx[i0:i0 + len(clip)] += clip[: n - i0]
+    tt = lambda d: np.arange(int(d * sr)) / sr
+    w = tt(0.28); noise = rng.standard_normal(len(w)).astype(np.float32)
+    whoosh = np.convolve(noise, np.ones(30) / 30, "same") * np.sin(np.pi * w / w[-1]) ** 2 * 0.35
+    p_ = tt(0.09); pop = (np.sin(2 * np.pi * (900 - 4000 * p_) * p_) * np.exp(-p_ * 45) * 0.45).astype(np.float32)
+    d_ = tt(0.6); ding = ((np.sin(2 * np.pi * 1320 * d_) + 0.4 * np.sin(2 * np.pi * 1980 * d_)) * np.exp(-d_ * 7) * 0.22).astype(np.float32)
+    for k, (b, t0, t1, a, _) in enumerate(tl):
+        if k: add(t0 - 0.12, whoosh)
+        for j in range(len(b.get("icons", [])[:3])): add(t0 + 0.15 * j + 0.06, pop)
+        if b.get("num"): add(t0 + 0.55, ding)
+    v = v + fx * 0.5
     m = music_bed(n, sr, seed)
     duck = np.convolve((np.abs(v) > 0.02).astype(float), np.ones(int(0.25 * sr)) / int(0.25 * sr), "same")
     mix = v / max(1e-6, np.abs(v).max()) * 0.9 + m * (0.10 - 0.05 * np.clip(duck * 3, 0, 1))
@@ -392,7 +409,7 @@ class StickScene(Scene):
         self.b, self.t0, self.t1, self.W, self.H, self.v, self.idx, self.n = b, t0, t1, W, H, vertical, idx, nbeats
         self.words = b["say"].split(); self.cap_cache = {}
         sz = 360 if vertical else 300
-        self.icons = [sticker(e, sz) for e in b.get("icons", [])[:3]]; self.icons = [i for i in self.icons if i is not None]
+        self.icons = [] if b.get("_seg") == "cta" else [i for i in (sticker(e, sz) for e in b.get("icons", [])[:3]) if i is not None]
         self.bg = Image.new("RGB", (W, H), BLACK); self.hl = (255, 214, 64)
 
     def caption(self, cur):
@@ -429,7 +446,7 @@ class StickScene(Scene):
             # stick figure: left-centre, standing on an imaginary floor
             pass
             # handwritten red label at the top
-            if b.get("key"):
+            if b.get("key") and b.get("_seg") != "cta":
                 a = min(1, lt / 0.25); f = font(FHAND, int((96 if v else 84) * S))
                 txt = b["key"].lower()
                 shown = txt[: max(1, int(len(txt) * a))]  # typewriter reveal
@@ -467,11 +484,15 @@ class StickScene(Scene):
                     num = float(m.group(2).replace(",", "")); dec = len(m.group(2).split(".")[1]) if "." in m.group(2) else 0
                     txt = m.group(1) + (f"{num * ease(a):,.{dec}f}" if "," in m.group(2) else f"{num * ease(a):.{dec}f}") + m.group(3)
                 d2.text((W * (0.72 if v else 0.64), H * (0.60 if v else 0.70)), txt, font=f, fill=self.hl, anchor="mm")
-        # slow zoom-in (Ken Burns) + punch-in on emphasis beats
-        z = 1.0 + 0.04 * ease(p) + (0.07 * max(0, 1 - lt / 0.25) if b.get("punch") else 0)
+        if b.get("_seg") == "cta": self._cta(im, lt)
+        # slow zoom-in (Ken Burns) + punch-in on emphasis beats + zoom-through at each new beat
+        zt = max(0, 1 - lt / 0.2) if self.idx > 0 else 0
+        z = 1.0 + 0.04 * ease(p) + (0.07 * max(0, 1 - lt / 0.25) if b.get("punch") else 0) + 0.45 * zt ** 2
         if z > 1.001:
             cw, chh = int(W / z), int(H / z); ox, oy = (W - cw) // 2, int((H - chh) * 0.45)
             im = im.crop((ox, oy, ox + cw, oy + chh)).resize((W, H), Image.BILINEAR)
+        if zt > 0.05: im = im.filter(ImageFilter.GaussianBlur(10 * zt))
+        self._header(im)
         cur = -1
         if self.t0 <= t < self.t1:
             lens = [len(w) + 1 for w in self.words]; acc = 0; tot = sum(lens); fr = (t - self.t0) / (self.t1 - self.t0)
@@ -484,6 +505,51 @@ class StickScene(Scene):
         if v:
             fr = (self.idx + p) / self.n; d = ImageDraw.Draw(im); d.rectangle([0, H - 10, int(W * fr), H], fill=RED)
         return im
+
+
+def _header(self, im):
+    """Fixed series title + chapter counter, so viewers always know where they are."""
+    W, H, v, b = self.W, self.H, self.v, self.b
+    d = ImageDraw.Draw(im); f = font(FSUB, 34 if v else 30); y = int(H * (0.04 if v else 0.045))
+    hdr = b.get("_hdr", "")
+    if hdr: d.text((W / 2, y), hdr, font=f, fill=(200, 200, 205), anchor="mm")
+    if b.get("_cnt"):
+        fc = font(FSUB, 40 if v else 34); txt = b["_cnt"]; tw = d.textlength(txt, font=fc); ph = 60 if v else 52
+        x1 = W - (40 if v else 50); x0 = x1 - tw - 44; y0 = int(H * (0.075 if v else 0.09)) - ph // 2 + (14 if v else 0)
+        if not v: y0 = y - ph // 2; x1 = W - 40; x0 = x1 - tw - 44
+        d.rounded_rectangle([x0, y0, x1, y0 + ph], radius=ph // 2, fill=RED)
+        d.text(((x0 + x1) / 2, y0 + ph / 2 + 2), txt, font=fc, fill=WHITE, anchor="mm")
+
+
+def _cta(self, im, lt):
+    """Designed follow card with a tapping hand, instead of only a spoken line."""
+    W, H, v = self.W, self.H, self.v
+    cw, chh = (int(W * 0.78), int(H * 0.17)) if v else (int(W * 0.40), int(H * 0.30))
+    a = min(1, lt / 0.4); s = ease_out_back(a)
+    card = Image.new("RGBA", (cw, chh), (0, 0, 0, 0)); d = ImageDraw.Draw(card)
+    d.rounded_rectangle([0, 0, cw - 1, chh - 1], radius=36, fill=(250, 248, 240), outline=WHITE, width=4)
+    av = mascot_img("laughing", int(chh * 0.78)); card.paste(av, (24, (chh - av.height) // 2), av)
+    tx = 24 + av.width + 24
+    d.text((tx, chh * 0.30), "simply weird", font=font(FHAND, int(chh * 0.26)), fill=INK, anchor="lm")
+    d.text((tx, chh * 0.54), "@simplyweirdexplained", font=font(FSUB, int(chh * 0.13)), fill=(90, 90, 110), anchor="lm")
+    bx0, by0, bx1, by1 = tx, int(chh * 0.66), tx + int(cw * 0.30), int(chh * 0.90)
+    tapped = lt > 1.6
+    d.rounded_rectangle([bx0, by0, bx1, by1], radius=(by1 - by0) // 2, fill=(120, 120, 130) if tapped else RED)
+    d.text(((bx0 + bx1) / 2, (by0 + by1) / 2 + 2), "following" if tapped else "follow", font=font(FSUB, int(chh * 0.12)), fill=WHITE, anchor="mm")
+    if s > 0.05:
+        card = card.resize((max(1, int(cw * s)), max(1, int(chh * s))))
+        cx, cy = (W * 0.5, H * 0.20) if v else (W * 0.66, H * 0.30)
+        ox, oy = int(cx - card.width / 2), int(cy - card.height / 2); im.paste(card, (ox, oy), card)
+        hand = emoji_img("👆", 150 if v else 120)
+        if hand is not None and a >= 1:
+            k = min(1, max(0, (lt - 0.6) / 0.9)); tap = 0.85 if 1.5 < lt < 1.7 else 1.0
+            bx = ox + (bx0 + bx1) / 2 * s; by = oy + by1 * s
+            hx = int(bx + (1 - ease(k)) * W * 0.25 - hand.width * 0.35); hy = int(by + (1 - ease(k)) * H * 0.10 - hand.height * 0.15)
+            hh = hand.resize((int(hand.width * tap), int(hand.height * tap))); im.paste(hh, (hx, hy), hh)
+
+
+StickScene._header = _header
+StickScene._cta = _cta
 
 
 def stick_thumb(ep, W=1280, H=720):
