@@ -32,6 +32,22 @@
    "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=898366367983289385"
   },
   {
+   "file": "videos/2026-11-25-ears-pop-on-planes.mp4",
+   "kind": "short",
+   "episode": "2026-11-25-ears-pop-on-planes",
+   "chapter": 0,
+   "title": "why your ears pop on a plane (explained simply)",
+   "sources": [
+    "https://www.mayoclinic.org/diseases-conditions/airplane-ear/symptoms-causes/syc-20351701",
+    "https://skybrary.aero/articles/cabin-altitude",
+    "https://www.nationalacademies.org/read/10238/chapter/13",
+    "https://www.britannica.com/science/eustachian-tube",
+    "https://en.wikipedia.org/wiki/Eustachian_tube",
+    "https://med.uth.edu/orl/2020/01/09/ears-and-altitude/"
+   ],
+   "status": "ready"
+  },
+  {
    "file": "videos/2026-11-23-buildings-cheat-physics-short2.mp4",
    "kind": "short",
    "episode": "2026-11-23-buildings-cheat-physics",

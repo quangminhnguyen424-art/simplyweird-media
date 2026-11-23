@@ -1,0 +1,12 @@
+[
+ {"id":"hook","say":"You're on a plane, and suddenly, your ears feel stuffed with cotton. Then, pop! What is actually going on in there?"},
+ {"id":"drum","say":"Inside each ear is a tiny eardrum, a thin skin stretched tight like a real drum. Air pushes on it from both sides."},
+ {"id":"cabin","say":"Here's the twist: plane cabins aren't pressurized to ground level. The rules let the air inside feel like a mountain, up to eight thousand feet high."},
+ {"id":"bulge","say":"Up there, the air pushes about a quarter less. So the air trapped behind your eardrum pushes outward, and the drum bulges like a balloon."},
+ {"id":"tube","say":"Your secret pressure valve is the Eustachian tube, a tiny tunnel about three and a half centimeters long, linking your middle ear to your throat."},
+ {"id":"shut","say":"Most of the time, that tube stays squished shut. It only opens when little muscles pull on it, like when you swallow or yawn."},
+ {"id":"pop","say":"And that's the pop! The tube snaps open, air whooshes through, the pressure evens out, and your eardrum relaxes back to normal."},
+ {"id":"down","say":"Landing flips everything around. Now air needs to get back in, and that floppy tube won't open by itself. You have to help it."},
+ {"id":"tips","say":"So chew gum, swallow, yawn, or pinch your nose and blow very gently. And try not to sleep through the descent."},
+ {"id":"cta","say":"Follow Simply Weird for more weird stuff like this."}
+]
