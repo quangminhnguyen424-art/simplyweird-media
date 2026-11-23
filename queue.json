@@ -1,4 +1,53 @@
 {
  "note": "Posting queue for Simply Weird. The daily task posts the first item whose status is 'ready', then marks it 'scheduled'. Episodes produce one 'long' item and one 'short' item per chapter.",
- "items": []
+ "items": [
+  {
+   "file": "videos/2026-11-23-buildings-cheat-physics-short1.mp4",
+   "kind": "short",
+   "episode": "2026-11-23-buildings-cheat-physics",
+   "chapter": 1,
+   "title": "Why Taipei 101 Hides a 660-Ton Steel Ball",
+   "status": "ready"
+  },
+  {
+   "file": "videos/2026-11-23-buildings-cheat-physics-long.mp4",
+   "kind": "long",
+   "episode": "2026-11-23-buildings-cheat-physics",
+   "chapter": 0,
+   "title": "5 Skyscrapers That Cheat Physics (And How They Get Away With It)",
+   "status": "ready"
+  },
+  {
+   "file": "videos/2026-11-23-buildings-cheat-physics-short2.mp4",
+   "kind": "short",
+   "episode": "2026-11-23-buildings-cheat-physics",
+   "chapter": 2,
+   "title": "The Skyscraper That Was Secretly Fixed at Night",
+   "status": "ready"
+  },
+  {
+   "file": "videos/2026-11-23-buildings-cheat-physics-short3.mp4",
+   "kind": "short",
+   "episode": "2026-11-23-buildings-cheat-physics",
+   "chapter": 3,
+   "title": "Tokyo Skytree's 1,300-Year-Old Earthquake Trick",
+   "status": "ready"
+  },
+  {
+   "file": "videos/2026-11-23-buildings-cheat-physics-short4.mp4",
+   "kind": "short",
+   "episode": "2026-11-23-buildings-cheat-physics",
+   "chapter": 4,
+   "title": "How the Burj Khalifa Confuses the Wind",
+   "status": "ready"
+  },
+  {
+   "file": "videos/2026-11-23-buildings-cheat-physics-short5.mp4",
+   "kind": "short",
+   "episode": "2026-11-23-buildings-cheat-physics",
+   "chapter": 5,
+   "title": "Why the Shanghai Tower Is Twisted",
+   "status": "ready"
+  }
+ ]
 }
