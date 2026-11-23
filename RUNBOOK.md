@@ -95,6 +95,17 @@ Caption text (all networks): a playful 1 to 2 sentence hook + 3 to 5 hashtags + 
 
 If Metricool returns an error, read it, fix the post and try once more. Then set the item's status to `scheduled` with the Metricool `plannerUrl` and date, commit and push `queue.json`.
 
+## 4b. Log it in the Google Sheet
+
+Google Sheet "Kênh video AI: theo dõi lợi nhuận, view, chi phí", ID `1-5IfQPm5ceowYOShcpfk-cYmbvPEuw7grzp2MKc29qI`, tab `Sổ video`. Read `'Sổ video'!A1:V200` with get_values, find the first empty row and the last code (`V004-EN` -> next is `V005-EN`). For every video scheduled today write ONLY these columns (columns L and N to Q are formulas, never write them):
+- `A:K`: date posted (YYYY-MM-DD), code, `Anh`, `Ngắn` or `Dài`, title, `Đã hẹn đăng`, 0, 0, 0, 0, 0
+- `T:V`: topic group in Vietnamese (e.g. `Động vật`, `Khoa học`, `Công trình và kỹ thuật`), the Metricool planner URL, a note like `Motion graphics; hẹn 17:07 PT trên YouTube, TikTok, Facebook`.
+Read the row back to check. (A separate nightly task fills in views and stats.)
+
+## 4c. Saving to the owner's computer
+
+Not done here: a separate scheduled task on the owner's computer downloads every new file in `queue.json` from GitHub into `Videos\Simply Weird\` (sorted by kind and month) each evening. So always push the video and queue.json before finishing.
+
 ## 5. Housekeeping
 
 Delete files in `videos/` whose queue item has been `scheduled` for more than 30 days (Metricool keeps its own copy), commit and push.
