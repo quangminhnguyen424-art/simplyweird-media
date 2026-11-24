@@ -23,7 +23,7 @@ bash engine/setup.sh
 
 - Make one new **motion Short** (step 2M) and schedule it for the earliest day, starting today, that has nothing scheduled in `queue.json` (step 4).
 - Older `ready` items in the queue (engine Shorts) are a **backup only**: post one of them on a day when the new video failed a check and could not be fixed, so the channel never misses a day.
-- Once a week you may make a long engine episode (step 2) in addition, never instead of the daily Short.
+- On Saturdays also build the weekly compilation (step 2W). The long engine episode (step 2) is optional and never replaces the daily Short.
 
 ## 2M. Make a motion Short (main format)
 
@@ -35,6 +35,14 @@ bash engine/setup.sh
 6. `python3 motion/build.py register` then `python3 motion/build.py stills <slug>` and look at every PNG with Read: text inside the frame, nothing overlapping captions, illustration readable. Fix and repeat.
 7. `python3 motion/build.py render <slug>` (5 to 10 minutes) -> `out/<slug>.mp4`. Extract 3 frames with ffmpeg and look; check duration with ffprobe.
 8. Copy to `videos/<slug>.mp4`, add a queue item `{"file": "videos/<slug>.mp4", "kind": "short", "episode": "<slug>", "chapter": 0, "title": "<short title, under 70 chars>", "sources": [...], "status": "ready"}`, commit (include the episode folder) and push. Then post as in step 4 (a Short).
+
+## 2W. Weekly compilation (every Saturday run, in addition to the daily Short)
+
+Format approved by the owner (Nov 24, 2026): a landscape YouTube video "every weird thing you never understood, explained", built from the motion Shorts.
+1. Take the motion Shorts not yet used in a compilation (see `"compiled_in"` in queue.json; up to 7, oldest first). Skip this step if fewer than 3.
+2. `python3 motion/compile.py <YYYY-MM-DD>-weird-things-explained-vol<N> "<spoken intro, 1 to 2 sentences naming the topics>" <slug> <slug> ...` with the date = next Sunday. Look at 3 frames (intro, a chapter, the end).
+3. Copy `out/<name>.mp4` and `out/<name>-chapters.txt` to `videos/`, add a queue item with `"kind": "long"`, and set `"compiled_in": "<name>"` on the Shorts used.
+4. Schedule for that Sunday 17:07 as a **Long** (step 4): YouTube `type: video` + Facebook `POST`, title like "Every Weird Thing You Never Understood, Explained (Vol. N)", description = intro sentence + the chapter list from the -chapters.txt file + "Narration is AI-generated." Log it in the Sheet with Loại `Dài`.
 
 ## 2. Make a long engine episode (secondary format)
 

@@ -1,0 +1,11 @@
+[
+ {"id": "hook", "say": "Two friends each get one hundred dollars on the same day. Forty years later, one still has a hundred. The other has almost fifteen hundred. Same money. So what happened?"},
+ {"id": "jar", "say": "Mia puts hers in a jar on the shelf. Safe, simple, and it never changes. One hundred dollars, forever."},
+ {"id": "plant", "say": "Leo does something weird. He puts his hundred somewhere it can grow a little each year. Let's say seven percent. And he never adds another cent."},
+ {"id": "yearone", "say": "After year one, Leo has one hundred seven dollars. Mia has one hundred. Honestly? Mia is not impressed."},
+ {"id": "snowball", "say": "But here's the trick. In year two, Leo earns seven percent on the hundred and seven, not just the hundred. His growth starts growing too. That's compound interest."},
+ {"id": "rule", "say": "There's a shortcut called the rule of seventy two. Divide seventy two by the growth rate, and you get roughly how many years it takes money to double. At seven percent, about ten years."},
+ {"id": "doubles", "say": "So Leo's hundred becomes about two hundred, then four hundred, then almost eight hundred. And by year forty, around fifteen hundred dollars."},
+ {"id": "catch", "say": "The catch? Real investments go up and down, and nothing guarantees seven percent. This is a simplified story, not financial advice. But the shape is real. Time does the heavy lifting."},
+ {"id": "cta", "say": "Follow Simply Weird for more weird stuff, explained simply."}
+]
