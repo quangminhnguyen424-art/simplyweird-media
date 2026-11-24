@@ -100,6 +100,17 @@
    "chapter": 5,
    "title": "Why the Shanghai Tower Is Twisted",
    "status": "ready"
+  },
+  {
+   "file": "videos/2026-11-29-weird-things-explained-vol1.mp4",
+   "kind": "long",
+   "episode": "2026-11-29-weird-things-explained-vol1",
+   "chapter": 0,
+   "title": "Every Weird Thing You Never Understood, Explained (Vol. 1)",
+   "status": "scheduled",
+   "scheduled_for": "2026-11-29T17:07:00-08:00",
+   "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=8071956138683025750",
+   "compilation": true
   }
  ]
 }

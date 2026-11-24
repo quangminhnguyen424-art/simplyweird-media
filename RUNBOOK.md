@@ -87,7 +87,7 @@ Check the URL with `curl -s -o /dev/null -w "%{http_code}" -r 0-100 URL` returns
 
 ## 4. Post today's video
 
-Take the first `ready` item (and if it is `short1`, also its episode's `long` item: post both today). Schedule with Metricool `createScheduledPost`, `blogId 7906465`, `autoPublish: true`, `draft: false`, at **17:07 America/Los_Angeles** on the earliest day, starting today, that has no item in `queue.json` already scheduled for that date (so there is exactly one post day per day; if 17:07 today has passed, start from tomorrow). Use `getBestTimeToPostByNetwork` only if you want to improve on 17:07.
+Take the first `ready` item (and if it is `short1`, also its episode's `long` item: post both today). Schedule with Metricool `createScheduledPost`, `blogId 7906465`, `autoPublish: true`, `draft: false`, at **17:07 America/Los_Angeles** on the earliest day, starting today, that has no item in `queue.json` already scheduled for that date (items with `"compilation": true` do not count: the daily Short still goes out on Sundays) (so there is exactly one post day per day; if 17:07 today has passed, start from tomorrow). Use `getBestTimeToPostByNetwork` only if you want to improve on 17:07.
 
 Caption text (all networks): a playful 1 to 2 sentence hook + 3 to 5 hashtags + the line `Some visuals are made with AI. Icons: OpenMoji (CC BY-SA 4.0).` (for motion Shorts use `Narration is AI-generated.` instead of the OpenMoji line, unless OpenMoji icons were used).
 
