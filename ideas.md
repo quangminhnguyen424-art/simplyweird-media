@@ -6,7 +6,7 @@ Mark `[x]` when used, with the slug. Facts must still be checked against sources
 ## How it works (one question, step by step, like the cat video)
 - [x] why cats land on their feet (2026-11-24-cats-land-on-feet)
 - [x] why your ears pop on a plane (2026-11-25-ears-pop-on-planes)
-- [ ] how a microwave heats food without getting hot itself
+- [x] how a microwave heats food without getting hot itself (2026-11-26-microwave-heats-food)
 - [ ] why the sky is blue but sunsets are orange
 - [ ] how noise-cancelling headphones "delete" sound
 - [ ] why ice floats when almost every other solid sinks

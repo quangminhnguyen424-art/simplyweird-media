@@ -1,0 +1,42 @@
+[
+ {
+  "id": "hook",
+  "say": "Your microwave boils soup in two minutes, but the plate and the walls barely get warm. So where's all that heat coming from?"
+ },
+ {
+  "id": "magnetron",
+  "say": "Inside hides a gadget called a magnetron. It fires invisible waves that flip back and forth billions of times a second."
+ },
+ {
+  "id": "water",
+  "say": "Your food is full of water, and each water molecule is lopsided: one end slightly plus, one end slightly minus."
+ },
+ {
+  "id": "spin",
+  "say": "Every flip yanks those molecules around. They spin, crash into their neighbors, and all that chaos becomes heat."
+ },
+ {
+  "id": "plate",
+  "say": "Glass and ceramic give the waves almost nothing to grab, so they zoom right through. The plate mostly gets warm from the food."
+ },
+ {
+  "id": "walls",
+  "say": "Metal walls bounce the waves like mirrors. The door's metal screen has holes too tiny for the waves, but light gets out."
+ },
+ {
+  "id": "spots",
+  "say": "Bouncing waves pile up in some places and cancel out in others. Hot spots, cold spots. That's why the plate spins."
+ },
+ {
+  "id": "myth",
+  "say": "And no, it doesn't cook from the inside out. The waves reach only about a centimeter in, and the middle heats the slow way."
+ },
+ {
+  "id": "candy",
+  "say": "Fun fact: in the nineteen forties, Percy Spencer stood near a radar magnetron, and the candy bar in his pocket melted."
+ },
+ {
+  "id": "cta",
+  "say": "So your food basically heats itself! Follow Simply Weird for more weird stuff like this."
+ }
+]
