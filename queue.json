@@ -62,7 +62,9 @@
     "https://www.aps.org/apsnews/2015/10/first-patent-for-microwave",
     "https://lemelson.mit.edu/resources/percy-spencer"
    ],
-   "status": "ready"
+   "status": "scheduled",
+   "scheduled_for": "2026-11-26T17:07:00-08:00",
+   "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=-4695094266606435299"
   },
   {
    "file": "videos/2026-11-23-buildings-cheat-physics-short2.mp4",
