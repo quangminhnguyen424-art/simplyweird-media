@@ -1,0 +1,42 @@
+[
+ {
+  "id": "hook",
+  "say": "That fluffy cloud floating over your house weighs about one point one million pounds. So why isn't it falling on your head?"
+ },
+ {
+  "id": "cube",
+  "say": "Picture a normal puffy cumulus cloud. Scientists model it as a giant box, about one kilometer on every side."
+ },
+ {
+  "id": "water",
+  "say": "Every cubic meter of that cloud holds only about half a gram of liquid water. Way less than a teaspoon!"
+ },
+ {
+  "id": "math",
+  "say": "But that box holds a billion cubic meters. That adds up to five hundred thousand kilograms, about as heavy as a hundred elephants!"
+ },
+ {
+  "id": "size",
+  "say": "The trick is size. Cloud droplets are only a few thousandths of a millimeter across, smaller than the width of a human hair."
+ },
+ {
+  "id": "slow",
+  "say": "Droplets that tiny fall ridiculously slowly, about eighteen to thirty six meters an hour. You could out-walk one."
+ },
+ {
+  "id": "updraft",
+  "say": "Meanwhile, warm air keeps rising from below, and those updrafts push the droplets up faster than they can sink."
+ },
+ {
+  "id": "air",
+  "say": "And here's the wild part. The air inside that same box weighs about a billion kilograms. The water is just a tiny passenger."
+ },
+ {
+  "id": "rain",
+  "say": "So when does it rain? When about a million droplets crash together into one raindrop, finally heavy enough to fall."
+ },
+ {
+  "id": "cta",
+  "say": "So yes, there's a herd of elephants floating above you. Follow Simply Weird for more weird stuff like this."
+ }
+]

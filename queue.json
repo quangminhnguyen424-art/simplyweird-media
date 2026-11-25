@@ -111,6 +111,22 @@
    "scheduled_for": "2026-11-29T17:07:00-08:00",
    "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=8071956138683025750",
    "compilation": true
+  },
+  {
+   "file": "videos/2026-11-25-how-heavy-is-a-cloud.mp4",
+   "kind": "short",
+   "episode": "2026-11-25-how-heavy-is-a-cloud",
+   "chapter": 0,
+   "title": "how heavy is a cloud? (explained simply)",
+   "sources": [
+    "https://www.usgs.gov/water-science-school/science/how-much-does-a-cloud-weigh",
+    "https://www.loc.gov/everyday-mysteries/meteorology-climatology/item/how-much-does-a-cloud-weigh/",
+    "https://www.livescience.com/planet-earth/why-do-clouds-float",
+    "https://www.scientificamerican.com/article/why-do-clouds-float-when/",
+    "https://geo.libretexts.org/Bookshelves/Meteorology_and_Climate_Science/Atmospheric_Processes_and_Phenomena/07%3A_Precipitation_Processes/7.02%3A_Cloud_Droplets",
+    "https://www.usgs.gov/water-science-school/science/precipitation-and-water-cycle"
+   ],
+   "status": "ready"
   }
  ]
 }
