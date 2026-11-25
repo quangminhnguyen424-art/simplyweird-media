@@ -28,7 +28,7 @@ Mark `[x]` when used, with the slug. Facts must still be checked against sources
 ## Myth vs fact (use `SwapCards`: the myth gets crossed out, the real answer pops in)
 - [ ] 7 "facts" everyone learned that are wrong (bulls & red, goldfish memory, ...)
 - [ ] do we really use only 10% of our brain?
-- [ ] does lightning never strike the same place twice?
+- [x] does lightning never strike the same place twice? (2026-11-26-lightning-strikes-twice)
 - [ ] is a penny dropped from a skyscraper deadly?
 
 ## Numbers that sound fake (big `Count` animations, size comparisons)

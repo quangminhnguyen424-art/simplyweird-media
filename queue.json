@@ -129,6 +129,20 @@
    "status": "scheduled",
    "scheduled_for": "2026-11-25T08:07:00-08:00",
    "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=-7392027924195490123"
+  },
+  {
+   "file": "videos/2026-11-26-lightning-strikes-twice.mp4",
+   "kind": "short",
+   "episode": "2026-11-26-lightning-strikes-twice",
+   "chapter": 0,
+   "title": "does lightning really never strike twice? (explained simply)",
+   "sources": [
+    "https://www.weather.gov/safety/lightning-myths",
+    "https://www.noaa.gov/stories/5-striking-facts-versus-myths-about-lightning-you-should-know",
+    "https://www.weather.gov/safety/lightning-science-dart-leaders",
+    "https://www.guinnessworldrecords.com/news/2023/1/incredible-story-of-man-who-survived-being-struck-by-lightning-seven-times-733932"
+   ],
+   "status": "ready"
   }
  ]
 }

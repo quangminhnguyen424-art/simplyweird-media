@@ -1,0 +1,52 @@
+[
+ {
+  "id": "hook",
+  "say": "You've heard it a million times: lightning never strikes the same place twice. Cute saying. Totally wrong.",
+  "dur": 6.485
+ },
+ {
+  "id": "empire",
+  "say": "The Empire State Building gets hit by lightning about twenty three times a year, on average. It's basically a giant lightning magnet.",
+  "dur": 8.656
+ },
+ {
+  "id": "rules",
+  "say": "So how does lightning pick a target? Three things matter most: being tall, being pointy, and standing all alone.",
+  "dur": 6.738
+ },
+ {
+  "id": "metal",
+  "say": "And here's a surprise. Metal makes absolutely no difference to where lightning strikes. Tall, pointy and lonely is what wins.",
+  "dur": 7.939
+ },
+ {
+  "id": "strokes",
+  "say": "Even one single flash cheats. After the first stroke, two or three more usually race down the exact same path.",
+  "dur": 7.216
+ },
+ {
+  "id": "flicker",
+  "say": "That's why lightning seems to flicker. You're watching it hit the same spot again and again, all in a fraction of a second.",
+  "dur": 7.177
+ },
+ {
+  "id": "dozen",
+  "say": "Scientists have even spotted flashes with more than a dozen strokes. One spot, zapped twelve times, in one flash.",
+  "dur": 7.51
+ },
+ {
+  "id": "roy",
+  "say": "And people? Park ranger Roy Sullivan was struck by lightning seven times between nineteen forty two and nineteen seventy seven. He survived every one.",
+  "dur": 9.608
+ },
+ {
+  "id": "sky",
+  "say": "One more twist. Lightning can strike ten to fifteen miles away from a storm, under blue sky. If you hear thunder, head inside.",
+  "dur": 8.239
+ },
+ {
+  "id": "cta",
+  "say": "So lightning strikes twice, and then some. Follow Simply Weird for more weird stuff like this.",
+  "dur": 5.952
+ }
+]
