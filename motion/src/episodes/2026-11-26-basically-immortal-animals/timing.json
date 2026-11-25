@@ -1,0 +1,52 @@
+[
+ {
+  "id": "hook",
+  "say": "Some animals just refuse to grow old. Here are five creatures that are basically immortal, or pretty darn close.",
+  "dur": 7.636
+ },
+ {
+  "id": "mole",
+  "say": "Number one: the naked mole rat. A rodent this tiny should live about six years. These wrinkly little guys can pass thirty.",
+  "dur": 7.878
+ },
+ {
+  "id": "risk",
+  "say": "Even weirder, their risk of dying doesn't go up as they get older. For a mammal, that's basically unheard of.",
+  "dur": 6.668
+ },
+ {
+  "id": "clam",
+  "say": "Number two: Ming the clam. Scientists counted the growth rings on its shell and found it was five hundred and seven years old.",
+  "dur": 7.969
+ },
+ {
+  "id": "oops",
+  "say": "The catch? Ming got frozen with about two hundred other clams before anyone knew how old it was. Oops.",
+  "dur": 6.679
+ },
+ {
+  "id": "shark",
+  "say": "Number three: the Greenland shark. Scientists dated the lenses in their eyes, and the biggest one was about three hundred ninety two years old.",
+  "dur": 9.113
+ },
+ {
+  "id": "hydra",
+  "say": "Number four: the hydra. It swaps out its cells about every four weeks, so its risk of dying never goes up with age.",
+  "dur": 7.422
+ },
+ {
+  "id": "jelly",
+  "say": "And number five, the weirdest: the immortal jellyfish. When it gets hurt or stressed, it turns back into a baby polyp and starts life over.",
+  "dur": 8.703
+ },
+ {
+  "id": "catch",
+  "say": "But none of them are truly unbeatable. Predators, disease and accidents still get them. Immortal, just not invincible.",
+  "dur": 7.804
+ },
+ {
+  "id": "cta",
+  "say": "Which one would you want to be? Follow Simply Weird for more weird stuff like this.",
+  "dur": 4.667
+ }
+]

@@ -19,7 +19,7 @@ Mark `[x]` when used, with the slug. Facts must still be checked against sources
 - [ ] how a QR code still works when part of it is torn
 
 ## Countdown lists (use the `Counter` "n/N" bar, one item per scene)
-- [ ] 5 animals that are basically immortal (or close)
+- [x] 5 animals that are basically immortal (or close) (2026-11-26-basically-immortal-animals)
 - [ ] 7 everyday things that were invented by accident
 - [ ] 5 places on Earth that break the rules of geography
 - [ ] 6 numbers that secretly run your body

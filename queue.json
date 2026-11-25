@@ -145,6 +145,22 @@
    "status": "scheduled",
    "scheduled_for": "2026-11-26T08:07:00-08:00",
    "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=-3184346396191342212"
+  },
+  {
+   "file": "videos/2026-11-26-basically-immortal-animals.mp4",
+   "kind": "short",
+   "episode": "2026-11-26-basically-immortal-animals",
+   "chapter": 0,
+   "title": "5 animals that are basically immortal (or close)",
+   "sources": [
+    "https://www.britannica.com/animal/immortal-jellyfish",
+    "https://www.demogr.mpg.de/en/news_press/news/press/forever_young_4396.htm",
+    "https://www.sciencenews.org/article/study-ranks-greenland-shark-longest-lived-vertebrate",
+    "https://www.nationalgeographic.com/animals/article/greenland-sharks-animals-science-age",
+    "https://www.nationalgeographic.com/animals/article/131116-oldest-clam-dead-ming-science-ocean-507",
+    "https://elifesciences.org/articles/31157"
+   ],
+   "status": "ready"
   }
  ]
 }
