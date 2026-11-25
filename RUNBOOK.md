@@ -19,11 +19,14 @@ bash engine/setup.sh
 
 ## 1. Decide what to do today
 
-**Every day, without exception: make ONE new video and schedule it.** (Owner's standing rule: one new video made and posted every day.)
+**Three new videos a day.** (Owner's rule, updated Nov 24, 2026: 3 videos made and posted every day.) This runbook is run 3 times a day; **each run makes ONE new video** and fills the next free posting slot.
 
-- Make one new **motion Short** (step 2M) and schedule it for the earliest day, starting today, that has nothing scheduled in `queue.json` (step 4).
+Posting slots (America/Los_Angeles): **08:07, 12:07 and 17:07** every day. A slot is taken if any queue item (except `"compilation": true`) is scheduled at that date and time.
+
+- Make one new **motion Short** (step 2M) and schedule it in the earliest free slot that is at least 90 minutes from now (step 4).
+- Before picking a topic, read the titles of the last 10 queue items: never repeat a topic, and vary the kind (how-it-works, countdown list, myth vs fact, numbers that sound fake) so the 3 videos of one day feel different.
 - Older `ready` items in the queue (engine Shorts) are a **backup only**: post one of them on a day when the new video failed a check and could not be fixed, so the channel never misses a day.
-- On Saturdays also build the weekly compilation (step 2W). The long engine episode (step 2) is optional and never replaces the daily Short.
+- On Saturdays, the first run of the day also builds the weekly compilation (step 2W). The long engine episode (step 2) is optional and never replaces the daily Short.
 
 ## 2M. Make a motion Short (main format)
 
@@ -87,7 +90,7 @@ Check the URL with `curl -s -o /dev/null -w "%{http_code}" -r 0-100 URL` returns
 
 ## 4. Post today's video
 
-Take the first `ready` item (and if it is `short1`, also its episode's `long` item: post both today). Schedule with Metricool `createScheduledPost`, `blogId 7906465`, `autoPublish: true`, `draft: false`, at **17:07 America/Los_Angeles** on the earliest day, starting today, that has no item in `queue.json` already scheduled for that date (items with `"compilation": true` do not count: the daily Short still goes out on Sundays) (so there is exactly one post day per day; if 17:07 today has passed, start from tomorrow). Use `getBestTimeToPostByNetwork` only if you want to improve on 17:07.
+Take the first `ready` item (and if it is `short1`, also its episode's `long` item: post both today). Schedule with Metricool `createScheduledPost`, `blogId 7906465`, `autoPublish: true`, `draft: false`, in the earliest free posting slot (08:07, 12:07 or 17:07 America/Los_Angeles, see step 1) at least 90 minutes from now. Items with `"compilation": true` do not take a slot. Use `getBestTimeToPostByNetwork` only if you want to improve on 17:07.
 
 Caption text (all networks): a playful 1 to 2 sentence hook + 3 to 5 hashtags + the line `Some visuals are made with AI. Icons: OpenMoji (CC BY-SA 4.0).` (for motion Shorts use `Narration is AI-generated.` instead of the OpenMoji line, unless OpenMoji icons were used).
 
