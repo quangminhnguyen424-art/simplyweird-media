@@ -160,7 +160,9 @@
     "https://www.nationalgeographic.com/animals/article/131116-oldest-clam-dead-ming-science-ocean-507",
     "https://elifesciences.org/articles/31157"
    ],
-   "status": "ready"
+   "status": "scheduled",
+   "scheduled_for": "2026-11-26T12:07:00-08:00",
+   "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=7899824505191416053"
   }
  ]
 }
