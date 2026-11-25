@@ -126,7 +126,9 @@
     "https://geo.libretexts.org/Bookshelves/Meteorology_and_Climate_Science/Atmospheric_Processes_and_Phenomena/07%3A_Precipitation_Processes/7.02%3A_Cloud_Droplets",
     "https://www.usgs.gov/water-science-school/science/precipitation-and-water-cycle"
    ],
-   "status": "ready"
+   "status": "scheduled",
+   "scheduled_for": "2026-11-25T08:07:00-08:00",
+   "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=-7392027924195490123"
   }
  ]
 }
