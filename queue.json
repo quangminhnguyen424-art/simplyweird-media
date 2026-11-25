@@ -142,7 +142,9 @@
     "https://www.weather.gov/safety/lightning-science-dart-leaders",
     "https://www.guinnessworldrecords.com/news/2023/1/incredible-story-of-man-who-survived-being-struck-by-lightning-seven-times-733932"
    ],
-   "status": "ready"
+   "status": "scheduled",
+   "scheduled_for": "2026-11-26T08:07:00-08:00",
+   "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=-3184346396191342212"
   }
  ]
 }
