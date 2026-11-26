@@ -163,6 +163,21 @@
    "status": "scheduled",
    "scheduled_for": "2026-11-26T12:07:00-08:00",
    "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=7899824505191416053"
+  },
+  {
+   "file": "videos/2026-11-27-noise-cancelling-headphones.mp4",
+   "kind": "short",
+   "episode": "2026-11-27-noise-cancelling-headphones",
+   "chapter": 0,
+   "title": "how noise-cancelling headphones work (explained simply)",
+   "sources": [
+    "https://www.scientificamerican.com/article/how-do-active-noise-canceling-headphones-work/",
+    "https://en.wikipedia.org/wiki/Noise-cancelling_headphones",
+    "https://www.sciencefocus.com/science/how-do-noise-cancelling-headphones-cancel-sounds/",
+    "https://support.sennheiser-hearing.com/hc/en-gb/articles/38785026673181-What-impacts-ANC-Active-Noise-Cancellation-performance-in-Headband-headphones",
+    "https://electronics.howstuffworks.com/gadgets/audio-music/noise-canceling-headset.htm"
+   ],
+   "status": "ready"
   }
  ]
 }

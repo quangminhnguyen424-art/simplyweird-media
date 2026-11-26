@@ -1,0 +1,42 @@
+[
+ {
+  "id": "hook",
+  "say": "Noise-cancelling headphones make a roaring plane engine almost vanish. They don't block it. They fight sound with more sound."
+ },
+ {
+  "id": "wave",
+  "say": "Sound is a pressure wave. Air gets squeezed, then stretched, over and over, really fast, and your eardrum wiggles along."
+ },
+ {
+  "id": "mic",
+  "say": "First, a tiny mic on the outside of the ear cup listens to the noise around you, like a little spy."
+ },
+ {
+  "id": "flip",
+  "say": "Then a chip builds the exact opposite wave: every squeeze becomes a stretch, every peak a dip. Engineers call it anti-noise."
+ },
+ {
+  "id": "cancel",
+  "say": "The speaker plays that anti-noise along with your music. Peak meets dip, they cancel out, and the drone just fades away."
+ },
+ {
+  "id": "check",
+  "say": "Many headphones hide a second mic inside the cup. It checks what noise sneaked through, and the chip corrects it on the fly."
+ },
+ {
+  "id": "low",
+  "say": "It works best on low, steady hums like engines. Voices and clattering dishes are higher and jumpier, so they're way harder."
+ },
+ {
+  "id": "cushion",
+  "say": "For those higher sounds, the squishy cushions do the job, physically sealing your ears. Teamwork: soft foam plus clever math."
+ },
+ {
+  "id": "history",
+  "say": "The idea is old! A German physicist patented it in the nineteen thirties, and pilots wore these long before your commute did."
+ },
+ {
+  "id": "cta",
+  "say": "So that silence is really two sounds fighting each other. Follow Simply Weird for more weird stuff like this."
+ }
+]
