@@ -177,7 +177,9 @@
     "https://support.sennheiser-hearing.com/hc/en-gb/articles/38785026673181-What-impacts-ANC-Active-Noise-Cancellation-performance-in-Headband-headphones",
     "https://electronics.howstuffworks.com/gadgets/audio-music/noise-canceling-headset.htm"
    ],
-   "status": "ready"
+   "status": "scheduled",
+   "scheduled_for": "2026-11-27T08:07:00-08:00",
+   "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=-9047622332227369103"
   }
  ]
 }
