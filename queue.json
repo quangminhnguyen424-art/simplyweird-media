@@ -195,6 +195,16 @@
    "status": "scheduled",
    "scheduled_for": "2026-11-27T12:07:00-08:00",
    "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=8777447826514986439"
+  },
+  {
+   "file": "videos/2026-11-27-how-a-car-engine-works.mp4",
+   "kind": "short",
+   "episode": "2026-11-27-how-a-car-engine-works",
+   "chapter": 0,
+   "title": "how your car's engine actually works (explained simply)",
+   "status": "scheduled",
+   "scheduled_for": "2026-11-27T17:07:00-08:00",
+   "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=-1033582561173682172"
   }
  ]
 }
