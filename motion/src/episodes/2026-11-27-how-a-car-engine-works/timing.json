@@ -1,0 +1,52 @@
+[
+ {
+  "id": "hook",
+  "say": "Your car's engine sets off thousands of tiny explosions every single minute. On purpose. And somehow, that's how you get to the taco place.",
+  "dur": 9.315
+ },
+ {
+  "id": "parts",
+  "say": "Inside are cylinders. Each one has a piston, a metal plug that slides up and down, kind of like the inside of a syringe.",
+  "dur": 8.371
+ },
+ {
+  "id": "intake",
+  "say": "Step one: suck. The piston slides down, a valve opens, and a mist of air and fuel gets pulled in.",
+  "dur": 6.654
+ },
+ {
+  "id": "squeeze",
+  "say": "Step two: squeeze. The valve shuts, and the piston pushes back up, crushing that mist into a tiny space.",
+  "dur": 6.82
+ },
+ {
+  "id": "bang",
+  "say": "Step three: bang. The spark plug fires, the fuel burns in a flash, and the hot gas slams the piston down. This is the only step that makes power.",
+  "dur": 9.78
+ },
+ {
+  "id": "blow",
+  "say": "Step four: blow. The piston comes back up and pushes the burnt gas out through the exhaust. Suck, squeeze, bang, blow.",
+  "dur": 7.455
+ },
+ {
+  "id": "crank",
+  "say": "But a piston only goes up and down, and wheels need to spin. So it's linked to a crankshaft, which turns that pumping into spinning, like your legs on bike pedals.",
+  "dur": 10.357
+ },
+ {
+  "id": "math",
+  "say": "Each cylinder fires once every two turns. So a four cylinder engine at two thousand RPM fires about four thousand times a minute. That's around sixty six bangs a second.",
+  "dur": 11.975
+ },
+ {
+  "id": "wheels",
+  "say": "That spin goes through the gearbox, down to the wheels, and off you go. Thousands of tiny fires, one smooth ride.",
+  "dur": 7.397
+ },
+ {
+  "id": "cta",
+  "say": "Follow Simply Weird for more weird stuff, explained simply.",
+  "dur": 3.797
+ }
+]
