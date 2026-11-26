@@ -180,6 +180,19 @@
    "status": "scheduled",
    "scheduled_for": "2026-11-27T08:07:00-08:00",
    "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=-9047622332227369103"
+  },
+  {
+   "file": "videos/2026-11-27-drinkable-water.mp4",
+   "kind": "short",
+   "episode": "2026-11-27-drinkable-water",
+   "chapter": 0,
+   "title": "how much of earth's water can you actually drink? (explained simply)",
+   "sources": [
+    "https://www.usgs.gov/water-science-school/science/where-earths-water",
+    "https://www.usgs.gov/water-science-school/science/how-much-water-there-earth",
+    "https://www.discovermagazine.com/this-tiny-sphere-is-all-the-worlds-water-18445"
+   ],
+   "status": "ready"
   }
  ]
 }

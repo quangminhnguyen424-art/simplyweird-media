@@ -1,0 +1,52 @@
+[
+ {
+  "id": "hook",
+  "say": "Earth is basically a giant water planet. So why do people keep saying we could run out of drinking water?",
+  "dur": 6.418
+ },
+ {
+  "id": "sphere",
+  "say": "Squash every ocean, lake and cloud into one ball, and it's only about eight hundred sixty miles wide. Kind of small, right?",
+  "dur": 7.912
+ },
+ {
+  "id": "salty",
+  "say": "Now the bad news. About ninety six and a half percent of all that water sits in the oceans, and it's way too salty to drink.",
+  "dur": 7.811
+ },
+ {
+  "id": "fresh",
+  "say": "Only about two and a half percent is freshwater. If all of Earth's water fit in a one gallon jug, that's less than half a cup.",
+  "dur": 7.923
+ },
+ {
+  "id": "ice",
+  "say": "And most of that little cup is frozen solid. Almost seventy percent of the freshwater is locked up in ice caps and glaciers.",
+  "dur": 7.673
+ },
+ {
+  "id": "ground",
+  "say": "About thirty percent hides underground as groundwater. We pump some of it up with wells, but not all of it is easy to reach.",
+  "dur": 7.843
+ },
+ {
+  "id": "lakes",
+  "say": "So what about every single lake and river on the planet? Added together, they're less than one hundredth of one percent of Earth's water.",
+  "dur": 8.168
+ },
+ {
+  "id": "drops",
+  "say": "Back in our gallon jug, that's just a few drops. And all the rivers in the world wouldn't even fill one single drop.",
+  "dur": 7.141
+ },
+ {
+  "id": "cycle",
+  "say": "The good news? Water doesn't really disappear. The water cycle keeps recycling it, so the same water rains down on us again and again.",
+  "dur": 8.532
+ },
+ {
+  "id": "cta",
+  "say": "So maybe go easy on that tap. And follow Simply Weird for more weird stuff like this.",
+  "dur": 5.364
+ }
+]
