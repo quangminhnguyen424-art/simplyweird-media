@@ -205,6 +205,21 @@
    "status": "scheduled",
    "scheduled_for": "2026-11-27T17:07:00-08:00",
    "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=-1033582561173682172"
+  },
+  {
+   "file": "videos/2026-11-28-ten-percent-brain-myth.mp4",
+   "kind": "short",
+   "episode": "2026-11-28-ten-percent-brain-myth",
+   "chapter": 0,
+   "title": "do we really use only 10% of our brain? (explained simply)",
+   "sources": [
+    "https://www.scientificamerican.com/article/do-we-really-use-only-10/",
+    "https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/",
+    "https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth",
+    "https://humanorigins.si.edu/education/fun-facts/our-big-hungry-brain",
+    "https://faculty.washington.edu/chudler/tenper.html"
+   ],
+   "status": "ready"
   }
  ]
 }

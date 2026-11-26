@@ -1,0 +1,52 @@
+[
+ {
+  "id": "hook",
+  "say": "You've heard you only use ten percent of your brain. Sounds like a superpower, right? Sadly, that's one hundred percent a myth.",
+  "dur": 7.905
+ },
+ {
+  "id": "scans",
+  "say": "Scientists have scanned working brains for decades. Over a normal day, every single region lights up. No dark, lazy ninety percent.",
+  "dur": 8.918
+ },
+ {
+  "id": "sleep",
+  "say": "Even while you sleep, your whole brain stays busy, sorting memories and keeping you breathing. It doesn't switch off, it just changes mode.",
+  "dur": 8.651
+ },
+ {
+  "id": "energy",
+  "say": "Your brain is only about two percent of your body weight, but it burns around twenty percent of your energy. That's a very hungry organ.",
+  "dur": 8.115
+ },
+ {
+  "id": "waste",
+  "say": "And evolution hates waste. Your body would never keep feeding an expensive organ that mostly does nothing.",
+  "dur": 6.37
+ },
+ {
+  "id": "damage",
+  "say": "Doctors see it too. Damage to even a small area, like from a stroke, can cause real problems. There's no spare brain.",
+  "dur": 7.873
+ },
+ {
+  "id": "sheep",
+  "say": "If you only used ten percent, you could lose the rest and keep about one hundred forty grams. That's roughly a sheep's brain.",
+  "dur": 7.539
+ },
+ {
+  "id": "origin",
+  "say": "So where did it start? A famous nineteen thirty six self-help book said William James claimed we develop only ten percent of our ability.",
+  "dur": 8.477
+ },
+ {
+  "id": "einstein",
+  "say": "But James never gave a number, and nobody ever found Einstein saying it. Your brain is fully on, all day, every day.",
+  "dur": 7.801
+ },
+ {
+  "id": "cta",
+  "say": "Follow Simply Weird for more weird stuff like this.",
+  "dur": 2.848
+ }
+]
