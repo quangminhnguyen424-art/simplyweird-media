@@ -1,0 +1,11 @@
+[
+ {"id": "hook", "say": "Pull the trigger on a drill and it feels like one simple thing. It's not. It's six parts working as a team. Let's take it apart, piece by piece."},
+ {"id": "battery", "say": "At the bottom is the battery, a pack of lithium ion cells. Fun fact: the first cordless drill showed up in nineteen sixty one, running on nickel cadmium."},
+ {"id": "trigger", "say": "Squeeze the trigger and you close a circuit, so power can flow. Most triggers are variable. The harder you squeeze, the faster it spins."},
+ {"id": "motor", "say": "That power reaches the motor, which spins really fast, thousands of turns a minute. But fast isn't strong. On its own, it would stall on the first big screw."},
+ {"id": "gears", "say": "So next comes a planetary gearbox. A little sun gear in the middle, planet gears around it, all inside a toothed ring. It trades speed for twisting force."},
+ {"id": "clutch", "say": "Then the clutch, that numbered ring near the front. Set it low, and once the screw is snug, it slips and clicks, instead of chewing up the screw head."},
+ {"id": "chuck", "say": "And at the very front, the chuck. Three jaws close together around the bit and keep it perfectly centered while it spins."},
+ {"id": "rebuild", "say": "Now put it all back together. Battery, trigger, motor, gears, clutch, chuck. One squeeze, and six parts do their job in a fraction of a second."},
+ {"id": "cta", "say": "Follow Simply Weird for more weird stuff, explained simply."}
+]

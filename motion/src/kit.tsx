@@ -222,3 +222,30 @@ export const Episode: React.FC<{segs: Seg[]; scenes: SceneMap; title: string}> =
     </AbsoluteFill>
   );
 };
+
+/**
+ * Exploded view ("bóc tách"): draw an object as separate parts, then pull them apart and put them back.
+ * Use inside an <svg>. Each part has its assembled drawing and an offset for the exploded state.
+ * p: 0 = assembled, 1 = fully exploded. focus: id of the part to highlight (others dim). stagger: 0..1 spread of timing per part.
+ */
+export type Part = {id: string; el: React.ReactNode; dx: number; dy: number; rot?: number; z?: number};
+export const ExplodedView: React.FC<{parts: Part[]; p: number; focus?: string; stagger?: number}> = ({parts, p, focus, stagger = 0.35}) => {
+  const n = parts.length;
+  return (
+    <>
+      {[...parts].sort((a, b) => (a.z ?? 0) - (b.z ?? 0)).map((part) => {
+        const i = parts.indexOf(part);
+        const s0 = (i / Math.max(1, n - 1)) * stagger;
+        const k = ease(Math.min(1, Math.max(0, (p - s0) / (1 - stagger))));
+        const dim = focus && focus !== part.id ? 0.22 : 1;
+        const pop = focus === part.id ? 1.06 : 1;
+        return (
+          <g key={part.id} opacity={dim} style={{transition: 'none'}}
+             transform={`translate(${part.dx * k} ${part.dy * k}) rotate(${(part.rot ?? 0) * k})`}>
+            <g style={{transformBox: 'fill-box', transformOrigin: 'center', transform: `scale(${pop})`}}>{part.el}</g>
+          </g>
+        );
+      })}
+    </>
+  );
+};
