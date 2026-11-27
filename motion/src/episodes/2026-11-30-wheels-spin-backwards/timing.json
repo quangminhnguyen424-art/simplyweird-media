@@ -1,0 +1,47 @@
+[
+ {
+  "id": "hook",
+  "say": "This car is flying forward. So why do its wheels sometimes look like they're spinning backwards? Your eyes aren't broken. The camera is tricking you.",
+  "dur": 9.074
+ },
+ {
+  "id": "frames",
+  "say": "A video isn't really moving. It's a stack of still photos, usually twenty four, thirty, or sixty every second, flipped so fast your brain sees motion.",
+  "dur": 9.981
+ },
+ {
+  "id": "slow",
+  "say": "When a wheel turns slowly, each photo catches the spokes a little further along. Forward, forward, forward. Easy.",
+  "dur": 7.208
+ },
+ {
+  "id": "fast",
+  "say": "Now speed it up. Between two photos, each spoke travels almost all the way to where the next spoke used to be.",
+  "dur": 6.796
+ },
+ {
+  "id": "trick",
+  "say": "Your brain compares the two photos and picks the shortest path. And the shortest path is a tiny step backwards. So the wheel seems to spin in reverse.",
+  "dur": 9.434
+ },
+ {
+  "id": "freeze",
+  "say": "Hit the exact speed where every spoke lands right where another one was, and the wheel looks frozen, even at full speed. Helicopter blades do this too.",
+  "dur": 9.664
+ },
+ {
+  "id": "name",
+  "say": "It's called the wagon wheel effect, named after old western movies where stagecoach wheels kept rolling the wrong way.",
+  "dur": 7.489
+ },
+ {
+  "id": "weird",
+  "say": "The weirdest part? Some people see it in real life too, in normal daylight, and scientists still argue about exactly why.",
+  "dur": 8.052
+ },
+ {
+  "id": "cta",
+  "say": "Follow Simply Weird for more weird stuff, explained simply.",
+  "dur": 3.797
+ }
+]

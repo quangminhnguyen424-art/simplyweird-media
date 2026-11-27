@@ -1,0 +1,47 @@
+[
+ {
+  "id": "hook",
+  "say": "Inside your engine, a tiny bolt of lightning strikes thousands of times a minute. And it all starts from a battery with just twelve volts.",
+  "dur": 8.42
+ },
+ {
+  "id": "problem",
+  "say": "But twelve volts can't jump through air. Not even across a gap about one millimeter wide. For that, you need thousands of volts.",
+  "dur": 8.46
+ },
+ {
+  "id": "coil",
+  "say": "So the car uses an ignition coil. It's basically a transformer: a few turns of thick wire, wrapped inside thousands of turns of much thinner wire.",
+  "dur": 10.018
+ },
+ {
+  "id": "collapse",
+  "say": "Current flows through the small coil and builds a magnetic field. Then a switch cuts the current off, and the field collapses in a flash.",
+  "dur": 8.215
+ },
+ {
+  "id": "boost",
+  "say": "That collapse surges through the big coil and comes out as a huge spike, often tens of thousands of volts.",
+  "dur": 6.37
+ },
+ {
+  "id": "jump",
+  "say": "The voltage races down to the spark plug and leaps across that tiny gap. The air breaks down, and you get a spark.",
+  "dur": 7.334
+ },
+ {
+  "id": "fire",
+  "say": "That spark lights the squeezed air and fuel at exactly the right moment. Bang. The piston gets pushed, and your car moves.",
+  "dur": 8.009
+ },
+ {
+  "id": "weird",
+  "say": "Many modern cars give every spark plug its own coil, sitting right on top of it. So a four cylinder engine carries four tiny lightning machines.",
+  "dur": 9.646
+ },
+ {
+  "id": "cta",
+  "say": "Follow Simply Weird for more weird stuff, explained simply.",
+  "dur": 3.797
+ }
+]

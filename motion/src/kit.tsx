@@ -5,7 +5,7 @@
  * zoom-blur scene transitions, progress bar. One accent hue per scene.
  */
 import React from 'react';
-import {AbsoluteFill, Sequence, Img, staticFile, useCurrentFrame, interpolate, spring, Easing, random} from 'remotion';
+import {AbsoluteFill, Sequence, Img, OffthreadVideo, staticFile, useCurrentFrame, interpolate, spring, Easing, random} from 'remotion';
 
 export const FPS = 30;
 export const PAD = 0.35; // seconds of air after each narration line
@@ -247,5 +247,21 @@ export const ExplodedView: React.FC<{parts: Part[]; p: number; focus?: string; s
         );
       })}
     </>
+  );
+};
+
+/**
+ * Full-frame AI video clip (Higgsfield etc.), stretched to fill the scene, with a dark gradient so text reads.
+ * Put the file in motion/public/hf/<name>.mp4. rate < 1 slows it down to cover a longer narration line.
+ */
+export const Clip: React.FC<{name: string; rate?: number; dim?: number; zoom?: number}> = ({name, rate = 1, dim = 0.35, zoom = 0.06}) => {
+  const f = useCurrentFrame();
+  return (
+    <AbsoluteFill style={{overflow: 'hidden'}}>
+      <AbsoluteFill style={{transform: `scale(${1 + zoom * Math.min(1, f / 240)})`}}>
+        <OffthreadVideo src={staticFile(`hf/${name}.mp4`)} playbackRate={rate} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+      </AbsoluteFill>
+      <AbsoluteFill style={{background: `linear-gradient(180deg, rgba(20,20,43,${dim + 0.25}) 0%, rgba(20,20,43,${dim * 0.4}) 35%, rgba(20,20,43,${dim * 0.4}) 60%, rgba(20,20,43,${dim + 0.45}) 100%)`}} />
+    </AbsoluteFill>
   );
 };
