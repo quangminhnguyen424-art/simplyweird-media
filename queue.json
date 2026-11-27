@@ -251,6 +251,16 @@
    "status": "scheduled",
    "scheduled_for": "2026-11-28T17:07:00-08:00",
    "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=-1023611263763789095"
+  },
+  {
+   "file": "videos/2026-11-27-two-friends-100-dollars.mp4",
+   "kind": "short",
+   "episode": "2026-11-27-two-friends-100-dollars",
+   "chapter": 0,
+   "title": "two friends, same $100, very different results",
+   "status": "scheduled",
+   "scheduled_for": "2026-11-29T08:07:00-08:00",
+   "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=3975283741969108776"
   }
  ]
 }
