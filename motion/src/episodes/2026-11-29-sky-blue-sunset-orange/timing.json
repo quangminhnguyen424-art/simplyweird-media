@@ -1,0 +1,52 @@
+[
+ {
+  "id": "hook",
+  "say": "The sky is blue. Sunsets are orange. Same sun, same air. So what is going on up there?",
+  "dur": 6.071
+ },
+ {
+  "id": "white",
+  "say": "Sunlight isn't really white. It's every rainbow color mixed together, and each color is a wave. Red waves are long, blue ones are short.",
+  "dur": 8.752
+ },
+ {
+  "id": "air",
+  "say": "Air is packed with nitrogen and oxygen molecules, way smaller than a light wave. And they love bouncing short waves around.",
+  "dur": 8.481
+ },
+ {
+  "id": "ten",
+  "say": "Short waves get scattered about ten times more than red. So blue ping pongs all over the sky, and hits your eyes from everywhere.",
+  "dur": 8.314
+ },
+ {
+  "id": "violet",
+  "say": "Violet is even shorter, so why no purple sky? The sun sends less violet, and our eyes prefer blue.",
+  "dur": 6.903
+ },
+ {
+  "id": "sunset",
+  "say": "At sunset, light comes in sideways and crosses way more air. Most of the blue gets bounced away before it reaches you.",
+  "dur": 7.289
+ },
+ {
+  "id": "leftover",
+  "say": "What's left? Reds, oranges and yellows. A sunset is basically the sky's leftovers.",
+  "dur": 5.954
+ },
+ {
+  "id": "rayleigh",
+  "say": "It's called Rayleigh scattering, after Lord Rayleigh, back in the eighteen seventies. Clouds? Big droplets scatter every color equally, so they look white.",
+  "dur": 9.576
+ },
+ {
+  "id": "mars",
+  "say": "And on Mars, it's flipped. NASA's Curiosity rover photographed a blue sunset, because fine Martian dust lets blue light through near the sun.",
+  "dur": 9.112
+ },
+ {
+  "id": "cta",
+  "say": "Follow Simply Weird for more weird stuff, explained simply.",
+  "dur": 3.797
+ }
+]

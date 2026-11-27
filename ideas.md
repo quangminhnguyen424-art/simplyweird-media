@@ -7,7 +7,7 @@ Mark `[x]` when used, with the slug. Facts must still be checked against sources
 - [x] why cats land on their feet (2026-11-24-cats-land-on-feet)
 - [x] why your ears pop on a plane (2026-11-25-ears-pop-on-planes)
 - [x] how a microwave heats food without getting hot itself (2026-11-26-microwave-heats-food)
-- [ ] why the sky is blue but sunsets are orange
+- [x] why the sky is blue but sunsets are orange (2026-11-29-sky-blue-sunset-orange)
 - [x] how noise-cancelling headphones "delete" sound (2026-11-27-noise-cancelling-headphones)
 - [ ] why ice floats when almost every other solid sinks
 - [ ] how a 400-ton plane stays in the air

@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "say": "The sky is blue. Sunsets are orange. Same sun, same air. So what is going on up there?"},
+ {"id": "white", "say": "Sunlight isn't really white. It's every rainbow color mixed together, and each color is a wave. Red waves are long, blue ones are short."},
+ {"id": "air", "say": "Air is packed with nitrogen and oxygen molecules, way smaller than a light wave. And they love bouncing short waves around."},
+ {"id": "ten", "say": "Short waves get scattered about ten times more than red. So blue ping pongs all over the sky, and hits your eyes from everywhere."},
+ {"id": "violet", "say": "Violet is even shorter, so why no purple sky? The sun sends less violet, and our eyes prefer blue."},
+ {"id": "sunset", "say": "At sunset, light comes in sideways and crosses way more air. Most of the blue gets bounced away before it reaches you."},
+ {"id": "leftover", "say": "What's left? Reds, oranges and yellows. A sunset is basically the sky's leftovers."},
+ {"id": "rayleigh", "say": "It's called Rayleigh scattering, after Lord Rayleigh, back in the eighteen seventies. Clouds? Big droplets scatter every color equally, so they look white."},
+ {"id": "mars", "say": "And on Mars, it's flipped. NASA's Curiosity rover photographed a blue sunset, because fine Martian dust lets blue light through near the sun."},
+ {"id": "cta", "say": "Follow Simply Weird for more weird stuff, explained simply."}
+]

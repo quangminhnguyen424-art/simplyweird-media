@@ -284,6 +284,23 @@
    "scheduled_for": "2026-11-29T17:07:00-08:00",
    "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=-7214831426304785139",
    "higgsfield": true
+  },
+  {
+   "file": "videos/2026-11-29-sky-blue-sunset-orange.mp4",
+   "kind": "short",
+   "episode": "2026-11-29-sky-blue-sunset-orange",
+   "chapter": 0,
+   "title": "why is the sky blue but sunsets orange? (explained simply)",
+   "sources": [
+    "https://spaceplace.nasa.gov/blue-sky/",
+    "https://www.rmg.co.uk/stories/space-astronomy/why-sky-blue",
+    "https://metoffice.gov.uk/learning/optics/why-is-the-sunset-red",
+    "https://math.ucr.edu/home/baez/physics/General/BlueSky/blue_sky.html",
+    "https://www.weather.gov/fgz/SkyBlue",
+    "https://spc.noaa.gov/publications/corfidi/sunset.html",
+    "https://www.jpl.nasa.gov/news/nasas-curiosity-rover-views-serene-sundown-on-mars/"
+   ],
+   "status": "ready"
   }
  ]
 }
