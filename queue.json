@@ -317,7 +317,9 @@
     "https://www.usmint.gov/learn/coin-and-medal-programs/coin-specifications",
     "https://www.esbnyc.com/about/facts-figures"
    ],
-   "status": "ready"
+   "status": "scheduled",
+   "scheduled_for": "2026-11-30T12:07:00-08:00",
+   "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=-1824776000236532100"
   }
  ]
 }
