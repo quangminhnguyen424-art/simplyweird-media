@@ -241,6 +241,16 @@
    "status": "scheduled",
    "scheduled_for": "2026-11-28T12:07:00-08:00",
    "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=5499975648321228617"
+  },
+  {
+   "file": "videos/2026-11-28-how-a-drill-works.mp4",
+   "kind": "short",
+   "episode": "2026-11-28-how-a-drill-works",
+   "chapter": 0,
+   "title": "how a drill actually works (taken apart, explained simply)",
+   "status": "scheduled",
+   "scheduled_for": "2026-11-28T17:07:00-08:00",
+   "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=-1023611263763789095"
   }
  ]
 }
