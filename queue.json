@@ -222,6 +222,23 @@
    "status": "scheduled",
    "scheduled_for": "2026-11-28T08:07:00-08:00",
    "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=8859614433252493523"
+  },
+  {
+   "file": "videos/2026-11-28-heartbeats-in-a-lifetime.mp4",
+   "kind": "short",
+   "episode": "2026-11-28-heartbeats-in-a-lifetime",
+   "chapter": 0,
+   "title": "how many times does your heart beat in a lifetime? (explained simply)",
+   "sources": [
+    "https://www.livescience.com/health/heart-circulation/how-many-times-does-a-heart-beat-in-a-day-what-about-in-a-lifetime",
+    "https://health.clevelandclinic.org/fun-facts-about-your-heart",
+    "https://heartandvascular.smhs.gwu.edu/heart-facts",
+    "https://www.cedars-sinai.org/health-topics/about-the-heart-and-blood-vessels",
+    "https://www.audubon.org/news/hummingbird-hearts-beat-10-times-faster-yours",
+    "https://www.eurekalert.org/news-releases/506792",
+    "https://www.livescience.com/first-blue-whale-heartbeat.html"
+   ],
+   "status": "ready"
   }
  ]
 }

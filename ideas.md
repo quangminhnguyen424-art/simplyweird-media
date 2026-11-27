@@ -33,5 +33,5 @@ Mark `[x]` when used, with the slug. Facts must still be checked against sources
 
 ## Numbers that sound fake (big `Count` animations, size comparisons)
 - [x] how heavy is a cloud? (2026-11-25-how-heavy-is-a-cloud)
-- [ ] how many times does your heart beat in a lifetime?
+- [x] how many times does your heart beat in a lifetime? (2026-11-28-heartbeats-in-a-lifetime)
 - [x] how much of Earth's water is actually drinkable? (2026-11-27-drinkable-water)
