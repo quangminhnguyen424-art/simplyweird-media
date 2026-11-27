@@ -43,6 +43,7 @@ Posting slots (America/Los_Angeles): **08:07, 12:07 and 17:07** every day. A slo
 
 **Hard budget: 800 Higgsfield credits per calendar month for this project.** Track every spend in `higgsfield-credits.md` (date, video, model, credits). Never exceed it; stop generating at 750 used and say so in the report. Also stop if the Higgsfield balance is under 150.
 Plan per month (~750 credits): **2 premium Shorts a week, 2 clips each** (seedance_2_5, 5 s, 9:16, 720p, `generate_audio: false` = 35 credits a clip) + 1 clip a week for the compilation intro. The other daily Shorts stay pure motion graphics.
+- **Approved look (owner, Nov 27, 2026):** like `2026-11-27-car-engine-cinematic`, `2026-11-30-wheels-spin-backwards`, `2026-11-30-spark-plug-lightning`: a Higgsfield clip as the full-frame hook with the Slam title on top, optional one cinematic insert mid-video, everything else motion graphics. Caption disclosure for these: `Some visuals and the narration are AI-generated.`
 - Use clips for what AI video does best: the 3-5 second cinematic hook (Clip component in kit, full frame, title on top) and one dramatic insert (e.g. the "bang"). Never to explain a mechanism (keep diagrams for that).
 - Prompts: photoreal, no logos, no brands, no real or famous people, no text in the clip.
 - Always `estimate_video_cost` first, then generate with the quote ref; never resubmit a job to retry.
