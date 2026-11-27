@@ -29,7 +29,7 @@ Mark `[x]` when used, with the slug. Facts must still be checked against sources
 - [ ] 7 "facts" everyone learned that are wrong (bulls & red, goldfish memory, ...)
 - [x] do we really use only 10% of our brain? (2026-11-28-ten-percent-brain-myth)
 - [x] does lightning never strike the same place twice? (2026-11-26-lightning-strikes-twice)
-- [ ] is a penny dropped from a skyscraper deadly?
+- [x] is a penny dropped from a skyscraper deadly? (2026-11-30-penny-from-skyscraper)
 
 ## Numbers that sound fake (big `Count` animations, size comparisons)
 - [x] how heavy is a cloud? (2026-11-25-how-heavy-is-a-cloud)

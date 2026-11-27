@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "say": "Drop a penny from the top of the Empire State Building and it could kill someone below. Everyone's heard it. So, is it true?"},
+ {"id": "tall", "say": "The building is one thousand two hundred fifty feet tall to its highest floor. That's a very long way down for one tiny coin."},
+ {"id": "vacuum", "say": "With no air at all, a penny falling that far would hit the ground at around two hundred miles per hour. Okay, that does sound scary."},
+ {"id": "light", "say": "But a penny weighs just two and a half grams, and it's flat, like a tiny frisbee. The air pushes back on it, hard."},
+ {"id": "flutter", "say": "So it doesn't drop like a rock. It tumbles and flutters, like a leaf. After about fifty feet, it stops speeding up completely."},
+ {"id": "terminal", "say": "That top speed is called terminal velocity. Physicist Louis Bloomfield found a penny tops out around twenty five miles per hour. Other estimates say fifty, max."},
+ {"id": "flick", "say": "If one hits you, Bloomfield says it feels like a flick on the forehead. Not even a hard one. Myth busted."},
+ {"id": "updraft", "say": "And at the Empire State Building, the wind rushing up the walls can be so strong, your penny might never reach the street at all."},
+ {"id": "pen", "say": "The real danger? A ballpoint pen. If it falls point first like an arrow, it could hit at two hundred miles per hour. So please, drop nothing."},
+ {"id": "cta", "say": "Follow Simply Weird for more weird stuff like this."}
+]
