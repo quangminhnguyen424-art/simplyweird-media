@@ -238,7 +238,9 @@
     "https://www.eurekalert.org/news-releases/506792",
     "https://www.livescience.com/first-blue-whale-heartbeat.html"
    ],
-   "status": "ready"
+   "status": "scheduled",
+   "scheduled_for": "2026-11-28T12:07:00-08:00",
+   "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=5499975648321228617"
   }
  ]
 }
