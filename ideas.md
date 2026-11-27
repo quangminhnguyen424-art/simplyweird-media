@@ -35,3 +35,10 @@ Mark `[x]` when used, with the slug. Facts must still be checked against sources
 - [x] how heavy is a cloud? (2026-11-25-how-heavy-is-a-cloud)
 - [x] how many times does your heart beat in a lifetime? (2026-11-28-heartbeats-in-a-lifetime)
 - [x] how much of Earth's water is actually drinkable? (2026-11-27-drinkable-water)
+
+## Money parables (approved Nov 26, 2026; story with 2 simple characters, numbers that count up, always a "simplified story, not financial advice" card; math only, no product names)
+- [x] two friends, same $100: jar vs growing money, compound interest + rule of 72 (2026-11-27-two-friends-100-dollars)
+- [ ] the latte that costs a house? small daily spending over 30 years (keep numbers as plain math)
+- [ ] why a credit card minimum payment takes years (simple interest math)
+- [ ] the farmer who planted trees vs sold seeds: saving vs spending
+- [ ] two brothers and inflation: why $100 buys less every year
