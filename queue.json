@@ -336,7 +336,9 @@
     "https://www.childrensmuseum.org/stories/why-does-ice-float",
     "https://cordis.europa.eu/article/id/454697-why-does-ice-float"
    ],
-   "status": "ready"
+   "status": "scheduled",
+   "scheduled_for": "2026-11-30T17:07:00-08:00",
+   "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=-8681863813890816016"
   }
  ]
 }

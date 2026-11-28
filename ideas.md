@@ -9,7 +9,7 @@ Mark `[x]` when used, with the slug. Facts must still be checked against sources
 - [x] how a microwave heats food without getting hot itself (2026-11-26-microwave-heats-food)
 - [x] why the sky is blue but sunsets are orange (2026-11-29-sky-blue-sunset-orange)
 - [x] how noise-cancelling headphones "delete" sound (2026-11-27-noise-cancelling-headphones)
-- [ ] why ice floats when almost every other solid sinks
+- [x] why ice floats when almost every other solid sinks
 - [ ] how a 400-ton plane stays in the air
 - [ ] why you can't tickle yourself
 - [ ] how GPS knows where you are (and why it needs Einstein)
