@@ -374,7 +374,9 @@
     "https://en.wikipedia.org/wiki/Tokyo_subway",
     "https://www.english.metro.tokyo.lg.jp/documents/d/english/about_tokyo_documents_tokyo_brochure_14_1-pdf"
    ],
-   "status": "ready"
+   "status": "scheduled",
+   "scheduled_for": "2026-12-01T12:07:00-08:00",
+   "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=5180910878025270647"
   }
  ]
 }
