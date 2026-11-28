@@ -31,13 +31,31 @@ Posting slots (America/Los_Angeles): **08:07, 12:07 and 17:07** every day. A slo
 ## 2M. Make a motion Short (main format)
 
 1. Pick the next unused idea from `ideas.md` (or a new one in the same spirit: one surprising question, answered with a clear "how it works" in 8 to 10 steps). Mark it used in `ideas.md`.
-2. Research every fact with WebSearch/WebFetch from good sources; drop anything you cannot confirm. Keep the source URLs.
+2. **Research BEFORE writing a single line of script (owner rule, Nov 27, 2026).** Write `motion/src/episodes/<slug>/research.md` first:
+   - Demand check: WebSearch the topic on YouTube (e.g. `site:youtube.com <topic> explained`) and note 2-3 recent high-view videos on the same question (title, views if shown). Learn the angle people click on; never copy their script, title, visuals or wording.
+   - Facts: at least 3 good sources (university, government, museum, encyclopedia, major publisher). List each fact you will use with its source URL. Drop anything you cannot confirm. Prefer the newest information.
+   - Angle: one line on the surprising hook and the "it gets weirder" twist; one line on why it beats the existing videos (clearer, newer, better story).
+   - Money angle: when choosing between ideas, prefer higher-paying niches (money, tech, how-things-work) over pure trivia.
 3. Create `motion/src/episodes/<YYYY-MM-DD>-<slug>/script.json`: 8 to 10 scenes `[{"id": "hook", "say": "..."}, ...]`, ids lowercase letters only, last id `cta` ("Follow Simply Weird for more weird stuff like this." or similar). Each `say` 1 to 2 sentences, 12 to 28 words, casual and playful; numbers and years in words. First line is a hook that works in the first 3 seconds. Target total 62 to 80 seconds (TikTok pays only over 1 minute).
-4. `python3 motion/build.py tts <slug>`: prints the total length. Too short: add a scene or lengthen lines, delete that scene's wav in `out/motion/<slug>/`, run again.
+4. Voice: **ElevenLabs** (see 2V). Generate one take per scene, convert each to `out/motion/<slug>/<id>.wav`, then run `python3 motion/build.py tts <slug>`: it keeps existing wavs (Kokoro only fills a missing scene, as a fallback) and prints the total length. Too short: add a scene or lengthen lines, delete that scene's wav in `out/motion/<slug>/`, run again.
 5. Write `Scenes.tsx` in the same folder, copying the structure of `motion/src/episodes/2026-11-24-cats-land-on-feet/Scenes.tsx`: export `title` (lowercase, under 40 chars), `segs` (= timing.json), `scenes` (one component per id + accent hue; use `CTA` from the kit for `cta`). Draw the subject yourself as a flat SVG illustration (thick ink outline, flat fills) and animate it with `interpolate`/`spring` from `useCurrentFrame()`. Keep everything above y=1420 (captions sit at 1480). Vary layouts: do not reuse the same scene shape twice in a row; for list topics use `Counter`, for myths use `SwapCards`, for numbers use `Count` or animated bars.
 6. `python3 motion/build.py register` then `python3 motion/build.py stills <slug>` and look at every PNG with Read: text inside the frame, nothing overlapping captions, illustration readable. Fix and repeat.
 7. `python3 motion/build.py render <slug>` (5 to 10 minutes) -> `out/<slug>.mp4`. Extract 3 frames with ffmpeg and look; check duration with ffprobe.
 8. Copy to `videos/<slug>.mp4`, add a queue item `{"file": "videos/<slug>.mp4", "kind": "short", "episode": "<slug>", "chapter": 0, "title": "<short title, under 70 chars>", "sources": [...], "status": "ready"}`, commit (include the episode folder) and push. Then post as in step 4 (a Short).
+
+## 2V. ElevenLabs voice (owner rule, Nov 27, 2026: every video uses ElevenLabs)
+
+Account: Creator tier, ~131,000 credits a month (~1 credit per character on `eleven_v4`). A Short (~1,300 characters with tags) costs ~1,400 credits, so 3 a day fits (~95-100k a month); check `account_get_usage` at the start of each run and fall back to Kokoro (and say so in the report) if fewer than 5,000 credits remain.
+- Model `eleven_v4`, flow `RJn5R1TOeUOJrChy6mwH` (pass it to every call), `generations_count` 1, one call per scene, all scenes in one parallel batch. Never re-run a call to retry.
+- Write `say` in script.json as clean text (it becomes the captions). The ElevenLabs prompt is the same line plus 1-2 audio tags where they fit the meaning: `[curious]`, `[surprised]`, `[excited]`, `[warmly]`, `[softly]`, `[laughs]`, `[short pause]`. Do not overuse tags.
+- Voice per format (voice ids from creative_list_voices):
+  - Daily how-it-works / science explainers: **Liam** `TX3LPaxmHKxFdv7VOQHJ` (energetic social-media narrator).
+  - Higgsfield cinematic premium Shorts and the weekly compilation: **Warm, Grounded Storyteller** `MFZUKuGQUsGJPQjTS4wC` (documentary feel).
+  - Money parables: **George** `JBFqnCBsd6RMkjVDRZzb` (warm storyteller).
+  - Brainrot / funny formats: **Jessica** `cgSgspJ2msm6clMCkdW9` (playful).
+  Keep one voice per format so the channel sounds consistent.
+- Getting the audio: after the batch, call `creative_get_flow_run_status` once with all session_ids to get each `content_url`. Download with `curl` into `out/motion/<slug>/<id>.mp3` and convert: `ffmpeg -i <id>.mp3 -af "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,apad=pad_dur=0.05" -ar 24000 -ac 1 -c:a pcm_s16le <id>.wav`. Do not put the signature through encodeURIComponent.
+- If `elevenlabsusercontent.com` is blocked (403 from the proxy), the run cannot fetch the audio: fall back to Kokoro for that video and tell the owner the domain must be allowed in Settings. Never save voice files to the owner's computer; they are working files only.
 
 ## 2H. Higgsfield premium clips (owner rule, Nov 27, 2026)
 

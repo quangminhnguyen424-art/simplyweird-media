@@ -1,0 +1,11 @@
+[
+ {"id": "hook", "say": "Okay, quick question. Drop almost any solid into its own liquid, and it sinks. Solid wax in melted wax? Sinks. But ice? Ice floats. And that's actually super weird."},
+ {"id": "rule", "say": "Normally, when stuff gets colder, its molecules huddle closer together. Tighter packing means heavier for its size. So the solid should sink. Makes sense, right?"},
+ {"id": "bonds", "say": "Well, water plays by different rules. Each molecule is one oxygen and two hydrogens, and they stick to their neighbors with something called hydrogen bonds."},
+ {"id": "dance", "say": "In liquid water, those bonds snap and re-form constantly. It's basically a crowded dance floor. Molecules bumping around, packed pretty close."},
+ {"id": "hexagon", "say": "But when water freezes, the bonds lock into a hexagon pattern, with empty space in the middle of every ring. Fun fact, that's also why snowflakes have six sides."},
+ {"id": "floats", "say": "All that empty space makes ice about nine percent less dense than liquid water. Lighter for its size. So, it floats. Simple as that."},
+ {"id": "weirder", "say": "And it gets weirder. Water is actually heaviest at about four degrees Celsius. So in winter, the coldest water rises to the top of a lake, and freezes there first."},
+ {"id": "fish", "say": "That lid of ice keeps the water underneath from freezing solid, so fish can survive the whole winter down there. If ice sank? Lakes would freeze from the bottom up."},
+ {"id": "cta", "say": "Follow Simply Weird for more weird stuff, explained simply."}
+]
