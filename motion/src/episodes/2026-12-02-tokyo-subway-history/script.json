@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "say": "Tokyo's subway carries over eight million rides a day. And the whole thing started with one guy... and two pockets full of beans."},
+ {"id": "london", "say": "In 1914, a businessman named Noritsugu Hayakawa rode the London Underground and thought, Tokyo needs this. Back home, the streets were jammed with crowded trams."},
+ {"id": "beans", "say": "To prove people would ride it, he stood at busy corners counting traffic. A white bean in his left pocket for every person walking by. A black bean in his right for every car."},
+ {"id": "quake", "say": "He started his subway company in 1920. Then in 1923 the Great Kanto earthquake hit, money dried up, and the digging didn't start until 1925."},
+ {"id": "short", "say": "So he shrank the plan. Instead of crossing the city, the first line was just two point two kilometers, from Ueno to Asakusa."},
+ {"id": "opening", "say": "It opened on December thirtieth, 1927, as the first subway in Asia. More than forty thousand people rode it that first morning, and some waited over two hours."},
+ {"id": "grow", "say": "The line kept growing, to Shimbashi in 1934 and Shibuya in 1939. That's today's orange Ginza Line. After the war, new lines followed, one after another."},
+ {"id": "today", "say": "Today there are thirteen lines and about two hundred eighty six stations. The deepest one, Roppongi on the Oedo Line, sits about forty two meters underground."},
+ {"id": "hundred", "say": "And that first little line from Ueno to Asakusa? It's still running. It turns one hundred years old on December thirtieth, 2027."},
+ {"id": "cta", "say": "Follow Simply Weird for more weird stuff, explained simply."}
+]
