@@ -320,6 +320,23 @@
    "status": "scheduled",
    "scheduled_for": "2026-11-30T12:07:00-08:00",
    "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=-1824776000236532100"
+  },
+  {
+   "file": "videos/2026-12-01-why-ice-floats.mp4",
+   "kind": "short",
+   "episode": "2026-12-01-why-ice-floats",
+   "chapter": 0,
+   "title": "why does ice float? (explained simply)",
+   "voice": "elevenlabs:Liam",
+   "sources": [
+    "https://courses.lumenlearning.com/umes-cheminter/chapter/the-structure-of-ice/",
+    "https://www.livescience.com/chemistry/why-does-ice-float",
+    "https://www.britannica.com/summary/ice",
+    "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(CK-12)/15:_Water/15.02:_Structure_of_Ice",
+    "https://www.childrensmuseum.org/stories/why-does-ice-float",
+    "https://cordis.europa.eu/article/id/454697-why-does-ice-float"
+   ],
+   "status": "ready"
   }
  ]
 }
