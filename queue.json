@@ -339,6 +339,22 @@
    "status": "scheduled",
    "scheduled_for": "2026-11-30T17:07:00-08:00",
    "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=-8681863813890816016"
+  },
+  {
+   "file": "videos/2026-12-01-how-gps-works.mp4",
+   "kind": "short",
+   "episode": "2026-12-01-how-gps-works",
+   "chapter": 0,
+   "title": "how does gps know where you are? (explained simply)",
+   "voice": "kokoro (ElevenLabs audio download blocked by proxy)",
+   "sources": [
+    "https://oceanservice.noaa.gov/facts/gps.html",
+    "https://www.gps.gov/systems/gps/space",
+    "https://www.astronomy.ohio-state.edu/pogge.1/Ast162/Unit5/gps",
+    "https://courses.ems.psu.edu/geog862/node/1714",
+    "https://www.iflscience.com/your-sat-nav-does-not-ping-any-satellites-so-how-does-gps-actually-work-75331"
+   ],
+   "status": "ready"
   }
  ]
 }

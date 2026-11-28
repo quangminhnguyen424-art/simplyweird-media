@@ -1,0 +1,52 @@
+[
+ {
+  "id": "hook",
+  "say": "Your phone knows exactly where you are. But here's the weird part. It never sends a single thing to space. It just listens.",
+  "dur": 7.736
+ },
+ {
+  "id": "sats",
+  "say": "About thirty GPS satellites circle the Earth, twenty thousand kilometers up. Each one loops the whole planet twice a day.",
+  "dur": 8.093
+ },
+ {
+  "id": "shout",
+  "say": "And every satellite keeps shouting just two things. Where it is, and the exact time it sent that message.",
+  "dur": 6.537
+ },
+ {
+  "id": "delay",
+  "say": "That signal flies at the speed of light, but it still takes a tiny moment to reach you. Measure the delay, and you know the distance.",
+  "dur": 7.647
+ },
+ {
+  "id": "bubbles",
+  "say": "One satellite puts you somewhere on a giant bubble. Add two more, and the bubbles overlap in just one spot. That's you.",
+  "dur": 7.336
+ },
+ {
+  "id": "fourth",
+  "say": "But your phone's clock is pretty cheap, so a fourth satellite fixes its timing. That's why GPS needs at least four.",
+  "dur": 7.839
+ },
+ {
+  "id": "nano",
+  "say": "Timing is everything. Light moves about thirty centimeters in a billionth of a second, so tiny clock errors mean big map errors.",
+  "dur": 8.405
+ },
+ {
+  "id": "einstein",
+  "say": "Now it gets weirder. Einstein says speed slows time, but weaker gravity speeds it up. So satellite clocks gain thirty eight microseconds a day.",
+  "dur": 9.529
+ },
+ {
+  "id": "drift",
+  "say": "Sounds tiny, right? But left alone, your location would drift about ten kilometers a day. So engineers set the clocks slow before launch.",
+  "dur": 9.135
+ },
+ {
+  "id": "cta",
+  "say": "Follow Simply Weird for more weird stuff, explained simply.",
+  "dur": 3.797
+ }
+]
