@@ -354,7 +354,9 @@
     "https://courses.ems.psu.edu/geog862/node/1714",
     "https://www.iflscience.com/your-sat-nav-does-not-ping-any-satellites-so-how-does-gps-actually-work-75331"
    ],
-   "status": "ready"
+   "status": "scheduled",
+   "scheduled_for": "2026-12-01T08:07:00-08:00",
+   "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=7403361193678622436"
   }
  ]
 }
