@@ -357,6 +357,24 @@
    "status": "scheduled",
    "scheduled_for": "2026-12-01T08:07:00-08:00",
    "planner": "https://app.metricool.com/planner/calendar?blogId=7906465&openWithPostUuid=7403361193678622436"
+  },
+  {
+   "file": "videos/2026-12-02-tokyo-subway-history.mp4",
+   "kind": "short",
+   "episode": "2026-12-02-tokyo-subway-history",
+   "chapter": 0,
+   "title": "how tokyo's subway began (with a pocket full of beans)",
+   "voice": "elevenlabs:Liam",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Noritsugu_Hayakawa",
+    "https://www.wikiwand.com/en/articles/Ginza_Line",
+    "https://www.oldtokyo.com/?p=31585",
+    "https://www.toshiseibi.metro.tokyo.lg.jp/keikaku_chousa_singikai/pdf/tokyotoshizukuri/en_2_05.pdf",
+    "https://www.tokyometro.jp/lang_en/news/224586.html",
+    "https://en.wikipedia.org/wiki/Tokyo_subway",
+    "https://www.english.metro.tokyo.lg.jp/documents/d/english/about_tokyo_documents_tokyo_brochure_14_1-pdf"
+   ],
+   "status": "ready"
   }
  ]
 }
